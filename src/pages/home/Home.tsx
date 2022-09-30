@@ -3,12 +3,20 @@ import '#styles/home/index.css';
 import { TableIcon } from '@heroicons/react/outline';
 import { AcademicCapIcon } from '@heroicons/react/solid';
 
+import { Alert } from '#components';
+
 import { HomeCard } from './HomeCard';
 import { HomeFooter } from './HomeFooter';
 
 const Home = () => {
   return (
     <>
+      <Alert warning>
+        This is a demo version of BlindsolveDB without server connection. A
+        smaller set of data is provided for demonstration purposes only, and
+        some features won&apos;t work.
+      </Alert>
+
       <div className="home">
         <h1 className="home__title">
           Blindsolve<span>DB</span>
