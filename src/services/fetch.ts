@@ -44,8 +44,6 @@ export const fetchFn = async (url: string, options?: FetchOptions) => {
       return null;
     }
 
-    console.log(res);
-
     return await res.json().catch(() => {
       throw new Error('Something went wrong');
     });

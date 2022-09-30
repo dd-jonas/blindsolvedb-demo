@@ -3,7 +3,9 @@ import {
   ChevronRightIcon,
   SwitchHorizontalIcon,
 } from '@heroicons/react/solid';
+import { MouseEvent } from 'react';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 import { useSettings } from '#providers';
 import { Case, Set } from '#types/api';
@@ -20,6 +22,22 @@ export const CaseLinks = ({ set, casus }: CaseLinksProps) => {
   const previousCase = set.cases[currentIndex - 1];
   const nextCase = set.cases[currentIndex + 1];
 
+  // -- Demo code
+  const preventNavigation = (e: MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+
+    toast.warn(
+      `Quick navigation is not supported, as only case ${ls(
+        casus.name,
+        casus.buffers
+      )} and ${ls(
+        casus.inverse_name!,
+        casus.buffers
+      )} are available in this demo.`
+    );
+  };
+  // -- End demo code
+
   return (
     <div className="case-links">
       <div className="case-links__inverse">
@@ -33,14 +51,20 @@ export const CaseLinks = ({ set, casus }: CaseLinksProps) => {
 
       <div className="case-links__prev-next">
         {previousCase && (
-          <Link to={`/sheets/${set.slug}/${previousCase.slug}`}>
+          <Link
+            to={`/sheets/${set.slug}/${previousCase.slug}`}
+            onClick={preventNavigation}
+          >
             <ChevronLeftIcon />
             {ls(previousCase.name, set.buffers)}
           </Link>
         )}
 
         {nextCase && (
-          <Link to={`/sheets/${set.slug}/${nextCase.slug}`}>
+          <Link
+            to={`/sheets/${set.slug}/${nextCase.slug}`}
+            onClick={preventNavigation}
+          >
             {ls(nextCase.name, set.buffers)}
             <ChevronRightIcon />
           </Link>
