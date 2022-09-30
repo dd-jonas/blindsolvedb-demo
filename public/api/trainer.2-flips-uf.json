@@ -1,0 +1,79 @@
+{
+  "name": "2-Flips UF",
+  "slug": "2-flips-uf",
+  "buffers": "UF",
+  "size": 11,
+  "used": 11,
+  "results": 11,
+  "learned": 11,
+  "review": 11,
+  "subsets": null,
+  "cases": [
+    {
+      "name": "[UF] [UB]",
+      "slug": "(UF)_(UB)",
+      "algorithm": "U' S R' F' R S' R' F R U' M' U2 M",
+      "average": 2.8238573
+    },
+    {
+      "name": "[UF] [UR]",
+      "slug": "(UF)_(UR)",
+      "algorithm": "R' F R U' M' U2 M U' S R' F' R S'",
+      "average": 3.0517142
+    },
+    {
+      "name": "[UF] [UL]",
+      "slug": "(UF)_(UL)",
+      "algorithm": "L F' L' U M' U2 M U S' L F L' S",
+      "average": 3.4887142
+    },
+    {
+      "name": "[UF] [FL]",
+      "slug": "(UF)_(FL)",
+      "algorithm": "R' E R U' R' E' R2 E2 R' U R E2 R'",
+      "average": 3.0763333
+    },
+    {
+      "name": "[UF] [FR]",
+      "slug": "(UF)_(FR)",
+      "algorithm": "R U' R' E' R2 E2 R' U R E2 R2 E",
+      "average": 3.4585
+    },
+    {
+      "name": "[UF] [BR]",
+      "slug": "(UF)_(BR)",
+      "algorithm": "R S' R' F R U' M' U2 M U' S R' F'",
+      "average": 3.3335
+    },
+    {
+      "name": "[UF] [BL]",
+      "slug": "(UF)_(BL)",
+      "algorithm": "E' R' U' R E R2 E2 R U R' E2 R2",
+      "average": 3.4726667
+    },
+    {
+      "name": "[UF] [DF]",
+      "slug": "(UF)_(DF)",
+      "algorithm": "U L F L' S' L F' L' S U' M' U2 M U2",
+      "average": 3.941
+    },
+    {
+      "name": "[UF] [DR]",
+      "slug": "(UF)_(DR)",
+      "algorithm": "R' F R S' U M' U2 M U R' F' R S",
+      "average": 3.0646667
+    },
+    {
+      "name": "[UF] [DB]",
+      "slug": "(UF)_(DB)",
+      "algorithm": "U2 M U' S R' F' R S' R' F R U' M'",
+      "average": 3.4805
+    },
+    {
+      "name": "[UF] [DL]",
+      "slug": "(UF)_(DL)",
+      "algorithm": "L F' L' S U' M' U2 M U' L F L' S'",
+      "average": 3.22
+    }
+  ]
+}

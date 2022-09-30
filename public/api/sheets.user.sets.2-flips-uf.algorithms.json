@@ -1,0 +1,13 @@
+[
+  { "case_id": 854, "algorithm": "U' S R' F' R S' R' F R U' M' U2 M" },
+  { "case_id": 855, "algorithm": "R' F R U' M' U2 M U' S R' F' R S'" },
+  { "case_id": 856, "algorithm": "L F' L' U M' U2 M U S' L F L' S" },
+  { "case_id": 857, "algorithm": "R' E R U' R' E' R2 E2 R' U R E2 R'" },
+  { "case_id": 858, "algorithm": "R U' R' E' R2 E2 R' U R E2 R2 E" },
+  { "case_id": 859, "algorithm": "R S' R' F R U' M' U2 M U' S R' F'" },
+  { "case_id": 860, "algorithm": "E' R' U' R E R2 E2 R U R' E2 R2" },
+  { "case_id": 861, "algorithm": "U L F L' S' L F' L' S U' M' U2 M U2" },
+  { "case_id": 862, "algorithm": "R' F R S' U M' U2 M U R' F' R S" },
+  { "case_id": 863, "algorithm": "U2 M U' S R' F' R S' R' F R U' M'" },
+  { "case_id": 864, "algorithm": "L F' L' S U' M' U2 M U' L F L' S'" }
+]

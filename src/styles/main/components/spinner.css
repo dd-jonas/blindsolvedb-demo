@@ -1,0 +1,70 @@
+.spinner {
+  --size: var(--size-12);
+  --animation-speed: 0.64s;
+  --animation-delay: calc(var(--animation-speed) / 8);
+
+  margin: var(--size-8) auto;
+  width: var(--size);
+  height: var(--size);
+  display: grid;
+  grid-template-areas:
+    'square square square'
+    'square square square'
+    'square square square';
+}
+
+@keyframes spinner {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+}
+
+.spinner__square {
+  animation: spinner var(--animation-speed) infinite;
+  background-color: var(--color-primary-800);
+  opacity: 0;
+}
+
+.spinner__square:nth-child(2) {
+  animation-delay: var(--animation-delay);
+}
+
+.spinner__square:nth-child(3) {
+  animation-delay: calc(var(--animation-delay) * 2);
+}
+
+.spinner__square:nth-child(6) {
+  animation-delay: calc(var(--animation-delay) * 3);
+}
+
+.spinner__square:nth-child(9) {
+  animation-delay: calc(var(--animation-delay) * 4);
+}
+
+.spinner__square:nth-child(8) {
+  animation-delay: calc(var(--animation-delay) * 5);
+}
+
+.spinner__square:nth-child(7) {
+  animation-delay: calc(var(--animation-delay) * 6);
+}
+
+.spinner__square:nth-child(4) {
+  animation-delay: calc(var(--animation-delay) * 7);
+}
+
+.spinner__square:nth-child(5) {
+  animation: none;
+}
+
+@media screen and (max-width: 768px) {
+  .spinner {
+    --size: var(--size-10);
+    margin: var(--size-6) auto;
+  }
+}

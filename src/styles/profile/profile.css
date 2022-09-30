@@ -1,0 +1,10 @@
+.profile {
+  display: grid;
+  gap: var(--size-6);
+}
+
+@media screen and (max-width: 768px) {
+  .profile {
+    gap: var(--size-4);
+  }
+}

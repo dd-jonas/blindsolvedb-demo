@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('../fonts/rubik-v19-latin-400.woff2') format('woff2'),
+    url('../fonts/rubik-v19-latin-400.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''), url('../fonts/rubik-v19-latin-500.woff2') format('woff2'),
+    url('../fonts/rubik-v19-latin-500.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''), url('../fonts/rubik-v19-latin-600.woff2') format('woff2'),
+    url('../fonts/rubik-v19-latin-600.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), url('../fonts/rubik-v19-latin-700.woff2') format('woff2'),
+    url('../fonts/rubik-v19-latin-700.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('../fonts/karla-v21-latin-400.woff2') format('woff2'),
+    url('../fonts/karla-v21-latin-400.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''), url('../fonts/karla-v21-latin-500.woff2') format('woff2'),
+    url('../fonts/karla-v21-latin-500.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''), url('../fonts/karla-v21-latin-600.woff2') format('woff2'),
+    url('../fonts/karla-v21-latin-600.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), url('../fonts/karla-v21-latin-700.woff2') format('woff2'),
+    url('../fonts/karla-v21-latin-700.woff') format('woff');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-rubik);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-sm);
+}
+
+h1 {
+  font-size: var(--font-scale-6);
+}
+
+h2 {
+  font-size: var(--font-scale-5);
+}
+
+h3 {
+  font-size: var(--font-scale-4);
+}
+
+h4 {
+  font-size: var(--font-scale-3);
+}
+
+h5 {
+  font-size: var(--font-scale-2);
+}
+
+h6 {
+  font-size: var(--font-scale-1);
+}
+
+small {
+  font-size: var(--font-scale-0);
+}

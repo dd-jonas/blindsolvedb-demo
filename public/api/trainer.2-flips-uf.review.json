@@ -1,0 +1,56 @@
+{
+  "name": "2-Flips UF",
+  "buffers": "UF",
+  "pool": [
+    {
+      "id": 856,
+      "prompt": "[UF] [UL]",
+      "solution": "L F' L' U M' U2 M U S' L F L' S"
+    },
+    {
+      "id": 864,
+      "prompt": "[UF] [DL]",
+      "solution": "L F' L' S U' M' U2 M U' L F L' S'"
+    },
+    {
+      "id": 863,
+      "prompt": "[UF] [DB]",
+      "solution": "U2 M U' S R' F' R S' R' F R U' M'"
+    },
+    {
+      "id": 861,
+      "prompt": "[UF] [DF]",
+      "solution": "U L F L' S' L F' L' S U' M' U2 M U2"
+    },
+    {
+      "id": 860,
+      "prompt": "[UF] [BL]",
+      "solution": "E' R' U' R E R2 E2 R U R' E2 R2"
+    },
+    {
+      "id": 862,
+      "prompt": "[UF] [DR]",
+      "solution": "R' F R S' U M' U2 M U R' F' R S"
+    },
+    {
+      "id": 858,
+      "prompt": "[UF] [FR]",
+      "solution": "R U' R' E' R2 E2 R' U R E2 R2 E"
+    },
+    {
+      "id": 859,
+      "prompt": "[UF] [BR]",
+      "solution": "R S' R' F R U' M' U2 M U' S R' F'"
+    },
+    {
+      "id": 854,
+      "prompt": "[UF] [UB]",
+      "solution": "U' S R' F' R S' R' F R U' M' U2 M"
+    },
+    {
+      "id": 857,
+      "prompt": "[UF] [FL]",
+      "solution": "R' E R U' R' E' R2 E2 R' U R E2 R'"
+    }
+  ]
+}

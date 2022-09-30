@@ -1,0 +1,3 @@
+.settings > :not(:last-child) {
+  margin-bottom: var(--size-6);
+}

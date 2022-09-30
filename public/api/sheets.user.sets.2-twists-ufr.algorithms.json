@@ -1,0 +1,16 @@
+[
+  { "case_id": 840, "algorithm": "[R' D R D' R' D R, U2]" },
+  { "case_id": 841, "algorithm": "[U2, R' D R D' R' D R]" },
+  { "case_id": 842, "algorithm": "[R' D R D' R' D R, U]" },
+  { "case_id": 843, "algorithm": "[U, R' D R D' R' D R]" },
+  { "case_id": 844, "algorithm": "[R' D R D' R' D R, U']" },
+  { "case_id": 845, "algorithm": "[U', R' D R D' R' D R]" },
+  { "case_id": 846, "algorithm": "U R' U' R U R' D R U' R' U R U' R' D' R" },
+  { "case_id": 847, "algorithm": "R' D R U R' U' R U R' D' R U' R' U R U'" },
+  { "case_id": 848, "algorithm": "U R' U' R U R' D' R U' R' U R U' R' D R" },
+  { "case_id": 849, "algorithm": "R' D' R U R' U' R U R' D R U' R' U R U'" },
+  { "case_id": 850, "algorithm": "R U R' D' R U' R' U R U' R' D R U R' U'" },
+  { "case_id": 851, "algorithm": "U R U' R' D' R U R' U' R U R' D R U' R'" },
+  { "case_id": 852, "algorithm": "R U' R' U R D' R' U' R U R' U' R D R' U" },
+  { "case_id": 853, "algorithm": "U' R D' R' U R U' R' U R D R' U' R U R'" }
+]

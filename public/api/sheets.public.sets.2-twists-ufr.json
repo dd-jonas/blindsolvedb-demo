@@ -1,0 +1,23 @@
+{
+  "name": "2-Twists UFR",
+  "slug": "2-twists-ufr",
+  "buffers": "FUR|RUF",
+  "headers": "[LUB]|[BUL]|[BUR]|[RUB]|[FUL]|[LUF]|[LDF]|[FDL]|[FDR]|[RDF]|[RDB]|[BDR]|[BDL]|[LDB]",
+  "size": 14,
+  "cases": [
+    { "id": 840, "name": "[FUR] [LUB]", "slug": "(FUR)_(LUB)", "sort": 1 },
+    { "id": 841, "name": "[RUF] [BUL]", "slug": "(RUF)_(BUL)", "sort": 2 },
+    { "id": 842, "name": "[FUR] [BUR]", "slug": "(FUR)_(BUR)", "sort": 3 },
+    { "id": 843, "name": "[RUF] [RUB]", "slug": "(RUF)_(RUB)", "sort": 4 },
+    { "id": 844, "name": "[FUR] [FUL]", "slug": "(FUR)_(FUL)", "sort": 5 },
+    { "id": 845, "name": "[RUF] [LUF]", "slug": "(RUF)_(LUF)", "sort": 6 },
+    { "id": 846, "name": "[FUR] [LDF]", "slug": "(FUR)_(LDF)", "sort": 7 },
+    { "id": 847, "name": "[RUF] [FDL]", "slug": "(RUF)_(FDL)", "sort": 8 },
+    { "id": 848, "name": "[FUR] [FDR]", "slug": "(FUR)_(FDR)", "sort": 9 },
+    { "id": 849, "name": "[RUF] [RDF]", "slug": "(RUF)_(RDF)", "sort": 10 },
+    { "id": 850, "name": "[FUR] [RDB]", "slug": "(FUR)_(RDB)", "sort": 11 },
+    { "id": 851, "name": "[RUF] [BDR]", "slug": "(RUF)_(BDR)", "sort": 12 },
+    { "id": 852, "name": "[FUR] [BDL]", "slug": "(FUR)_(BDL)", "sort": 13 },
+    { "id": 853, "name": "[RUF] [LDB]", "slug": "(RUF)_(LDB)", "sort": 14 }
+  ]
+}

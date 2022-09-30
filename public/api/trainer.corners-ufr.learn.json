@@ -1,0 +1,50 @@
+{
+  "name": "Corners UFR",
+  "buffers": "UFR",
+  "pool": [
+    {
+      "id": 3,
+      "prompt": "UFR-UBL-LUF",
+      "solution": "[F: [U2, R' D' R]]",
+      "new": true
+    },
+    {
+      "id": 73,
+      "prompt": "UFR-LUF-UBL",
+      "solution": "[F: [R' D' R, U2]]",
+      "new": true
+    },
+    {
+      "id": 4,
+      "prompt": "UFR-UBL-LDF",
+      "solution": "[R' D R, U2]",
+      "new": true
+    },
+    {
+      "id": 91,
+      "prompt": "UFR-LDF-UBL",
+      "solution": "[U2, R' D R]",
+      "new": true
+    },
+    {
+      "id": 870,
+      "prompt": "UFR-UBL-UBR",
+      "solution": "[R' B' R: [R D R', U']]"
+    },
+    {
+      "id": 2,
+      "prompt": "UFR-UBL-UFL",
+      "solution": "[R' U2 D': [R' D R, U]]"
+    },
+    {
+      "id": 19,
+      "prompt": "UFR-UBR-UBL",
+      "solution": "[l': [R' D2 R, U]]"
+    },
+    {
+      "id": 37,
+      "prompt": "UFR-UFL-UBL",
+      "solution": "[R' U' D': [R' D R, U']]"
+    }
+  ]
+}

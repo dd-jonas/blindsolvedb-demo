@@ -1,0 +1,357 @@
+.trainer {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  gap: var(--size-8);
+}
+
+.trainer__header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-items: center;
+}
+
+.trainer__title {
+  text-align: center;
+}
+
+.trainer__end {
+  padding: 0 var(--size-2);
+  color: var(--color-grey-500);
+}
+
+.trainer__end:hover {
+  color: var(--color-grey-600);
+}
+
+.trainer__end:active {
+  color: var(--color-grey-700);
+}
+
+.trainer__end--disabled {
+  opacity: 0 !important;
+}
+
+.trainer__end svg {
+  --size: var(--size-6);
+  width: var(--size);
+  height: var(--size);
+}
+
+.trainer__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-12);
+  padding: var(--size-6);
+  border: var(--size-px) solid var(--color-grey-200);
+  border-radius: var(--size-px);
+  box-shadow: var(--elevation-2);
+  background-color: var(--color-white);
+}
+
+.trainer__card .cubes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.trainer__card .cubes__explanation {
+  grid-column: 1 / -1;
+  justify-self: start;
+  margin-top: var(--size-4);
+  font-size: var(--font-scale-0);
+}
+
+.trainer__card .cubes__label {
+  font-size: var(--font-scale-2);
+  font-weight: var(--font-weight-semibold);
+}
+
+.trainer__card--start > img {
+  width: var(--size-48);
+}
+
+.trainer__card--start h3 {
+  margin-bottom: var(--size-2);
+}
+
+.trainer__card--start h3:not(:first-child) {
+  margin-top: var(--size-8);
+}
+
+.trainer__card--start ul:first-of-type {
+  line-height: var(--line-height-lg);
+}
+
+.trainer__card--learn,
+.trainer__card--test-back {
+  flex-direction: column;
+}
+
+.trainer__card--learn > :first-child,
+.trainer__card--test-back > :first-child {
+  font-size: var(--font-scale-6);
+  font-weight: var(--font-weight-semibold);
+}
+
+.trainer__card--learn > :last-child,
+.trainer__card--test-back > :last-child {
+  padding: var(--size-2) var(--size-10);
+  border-radius: var(--size-px);
+  font-size: var(--font-scale-4);
+  background-color: var(--color-grey-200);
+}
+
+.trainer__card--test-front {
+  font-size: 7.5rem;
+  font-weight: var(--font-weight-bold);
+  user-select: none;
+  cursor: pointer;
+}
+
+.trainer__card--test-back {
+  user-select: none;
+  cursor: pointer;
+}
+
+.trainer__card--end {
+  justify-content: start;
+  flex-direction: column;
+  gap: var(--size-8);
+  border: none;
+  box-shadow: none;
+  background-color: unset;
+}
+
+.trainer__card--end > :first-child {
+  font-size: var(--font-scale-4);
+  font-weight: var(--font-weight-semibold);
+}
+
+.trainer__card--end table {
+  width: auto;
+  box-shadow: var(--elevation-1);
+}
+
+.trainer__card--end td {
+  padding: var(--size-1) var(--size-16);
+}
+
+.trainer__card--end td.result--good {
+  background-color: var(--color-success-300);
+}
+
+.trainer__card--end td.result--slow {
+  background-color: var(--color-warning-300);
+}
+
+.trainer__card--end td.result--failed {
+  background-color: var(--color-danger-300);
+}
+
+.trainer__card--end td svg {
+  --size: var(--size-5);
+  display: inline-block;
+  vertical-align: middle;
+  width: var(--size);
+  height: var(--size);
+}
+
+.trainer__card--end > img {
+  margin-top: var(--size-8);
+  width: var(--size-64);
+}
+
+.trainer__action {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-6);
+}
+
+.trainer__action > * {
+  --padding-y: var(--size-3);
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  padding-top: var(--padding-y);
+  padding-bottom: var(--padding-y);
+  font-size: var(--font-scale-3);
+}
+
+.trainer__action svg {
+  --size: var(--size-6);
+  width: var(--size);
+  height: var(--size);
+}
+
+@media screen and (max-width: 1200px) {
+  .trainer {
+    gap: var(--size-6);
+  }
+
+  .trainer__title {
+    font-size: var(--font-scale-4);
+  }
+
+  .trainer__end svg {
+    --size: var(--size-5);
+  }
+
+  .trainer__card {
+    gap: var(--size-8);
+  }
+
+  .trainer__card .cubes__explanation {
+    margin-top: var(--size-2);
+  }
+
+  .trainer__card--start > img {
+    width: var(--size-32);
+  }
+
+  .trainer__card--start h3 {
+    font-weight: var(--font-weight-medium);
+  }
+
+  .trainer__card--learn > :first-child,
+  .trainer__card--test-back > :first-child {
+    font-size: var(--font-scale-5);
+  }
+
+  .trainer__card--learn > :last-child,
+  .trainer__card--test-back > :last-child {
+    padding: var(--size-1) var(--size-4);
+    font-size: var(--font-scale-3);
+  }
+
+  .trainer__card--test-front {
+    font-size: 4rem;
+  }
+
+  .trainer__card--end {
+    gap: var(--size-6);
+  }
+
+  .trainer__card--end td {
+    padding: var(--size-1) var(--size-12);
+  }
+
+  .trainer__card--end td svg {
+    --size: var(--size-4);
+  }
+
+  .trainer__card--end > img {
+    margin-top: var(--size-6);
+    width: var(--size-48);
+  }
+
+  .trainer__action {
+    gap: var(--size-4);
+  }
+
+  .trainer__action > * {
+    --padding-y: var(--size-2);
+  }
+
+  .trainer__action svg {
+    --size: var(--size-5);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .trainer {
+    gap: var(--size-4);
+  }
+
+  .trainer__title {
+    font-size: var(--font-scale-3);
+  }
+
+  .trainer__end svg {
+    --size: var(--size-4);
+  }
+
+  .trainer__card {
+    gap: var(--size-6);
+    padding: var(--size-4);
+  }
+
+  .trainer__card .cubes__label {
+    font-size: var(--font-scale-1);
+  }
+
+  .trainer__card .cubes__explanation {
+    margin-top: var(--size-1);
+  }
+
+  .trainer__card--start {
+    flex-direction: column;
+  }
+
+  .trainer__card--start > img {
+    width: var(--size-16);
+  }
+
+  .trainer__card--start h3 {
+    margin-bottom: var(--size-1);
+    font-size: var(--font-scale-3);
+  }
+
+  .trainer__card--start h3:not(:first-child) {
+    margin-top: var(--size-4);
+  }
+
+  .trainer__card--start li {
+    font-size: var(--font-scale-0);
+  }
+
+  .trainer__card--learn > :first-child,
+  .trainer__card--test-back > :first-child {
+    font-size: var(--font-scale-4);
+  }
+
+  .trainer__card--learn > :last-child,
+  .trainer__card--test-back > :last-child {
+    font-size: var(--font-scale-2);
+  }
+
+  .trainer__card--test-front {
+    font-size: var(--font-scale-6);
+  }
+
+  .trainer__card--end {
+    gap: var(--size-3);
+  }
+
+  .trainer__card--end > :first-child {
+    font-size: var(--font-scale-3);
+    align-self: start;
+  }
+
+  .trainer__card--end table {
+    width: 100%;
+  }
+
+  .trainer__card--end td {
+    padding: var(--size-1) var(--size-2);
+    text-align: center;
+  }
+
+  .trainer__card--end td svg {
+    --size: var(--size-3);
+  }
+
+  .trainer__card--end > img {
+    margin-top: var(--size-4);
+    width: var(--size-32);
+  }
+
+  .trainer__action {
+    gap: var(--size-2);
+  }
+
+  .trainer__action > * {
+    font-size: var(--font-scale-2);
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": 1,
+  "name": "UFR-UBL-UBR",
+  "slug": "UFR-UBL-UBR",
+  "scramble": "R2 B2 R F R' B2 R F' R",
+  "buffers": "UFR",
+  "inverse_name": "UFR-UBR-UBL",
+  "inverse_slug": "UFR-UBR-UBL",
+  "algorithms": [
+    {
+      "id": 1,
+      "users": 11,
+      "shapes": [
+        { "id": 1, "text": "[l': [U, R' D2 R]]", "users": 8 },
+        { "id": 2, "text": "[x R': [U, R' D2 R]]", "users": 3 }
+      ]
+    },
+    {
+      "id": 870,
+      "users": 1,
+      "shapes": [{ "id": 872, "text": "[R' B' R: [R D R', U']]", "users": 1 }]
+    },
+    {
+      "id": 876,
+      "users": 0,
+      "shapes": [
+        {
+          "id": 881,
+          "text": "U' r U r' U' r' F r2 U' r' U' r U r' F' U2",
+          "users": 0
+        }
+      ]
+    }
+  ]
+}

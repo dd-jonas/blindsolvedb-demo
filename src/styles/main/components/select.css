@@ -1,0 +1,31 @@
+.select {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--size-1);
+}
+
+.select__label {
+  font-weight: var(--font-weight-medium);
+}
+
+.select__trigger {
+  width: var(--size-full);
+  padding: var(--size-2);
+  border: var(--size-px) solid var(--color-primary-800);
+  color: var(--color-grey-900);
+  background-color: var(--color-white);
+  outline: none;
+}
+
+.select__trigger:focus {
+  border-color: var(--color-accent);
+}
+
+.select__trigger--error,
+.select__trigger--error:focus {
+  border-color: var(--color-danger-600);
+}
+
+.select__error {
+  color: var(--color-danger-600);
+}

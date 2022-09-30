@@ -1,0 +1,83 @@
+.Toastify {
+  --toastify-color-light: var(--color-white);
+  --toastify-color-dark: var(--color-black);
+  --toastify-color-success: var(--color-success-600);
+  --toastify-color-info: var(--color-info-600);
+  --toastify-color-warning: var(--color-warning-500);
+  --toastify-color-error: var(--color-danger-600);
+  --toastify-color-transparent: rgba(255, 255, 255, 0.7);
+
+  --toastify-toast-background: var(--color-white);
+  --toastify-font-family: var(--font-family-karla);
+  --toastify-z-index: var(--layer-5);
+
+  --toastify-text-color-light: var(--color-grey-700);
+  --toastify-text-color-dark: var(--color-white);
+  --toastify-text-color-info: var(--color-white);
+  --toastify-text-color-success: var(--color-white);
+  --toastify-text-color-warning: var(--color-black);
+  --toastify-text-color-error: var(--color-white);
+
+  --toastify-spinner-color: var(--color-grey-600);
+  --toastify-spinner-color-empty-area: var(--color-grey-200);
+
+  --toastify-color-progress-light: var(--color-accent);
+  --toastify-color-progress-dark: var(--color-accent);
+}
+
+.Toastify .Toastify__toast {
+  padding: var(--size-2);
+  border-radius: var(--size-px);
+  box-shadow: var(--elevation-4);
+}
+
+.Toastify .Toastify__toast--default {
+  border: var(--size-px) solid var(--color-grey-200);
+}
+
+.Toastify .Toastify__toast--success {
+  border: var(--size-px) solid var(--color-success-700);
+}
+
+.Toastify .Toastify__toast--info {
+  border: var(--size-px) solid var(--color-info-700);
+}
+
+.Toastify .Toastify__toast--warning {
+  border: var(--size-px) solid var(--color-warning-600);
+}
+
+.Toastify .Toastify__toast--error {
+  border: var(--size-px) solid var(--color-danger-700);
+}
+
+.Toastify .Toastify__toast-body {
+  padding: var(--size-2);
+}
+
+.Toastify .Toastify__progress-bar {
+  height: var(--size-1);
+}
+
+.Toastify
+  .Toastify__progress-bar-theme--colored.Toastify__progress-bar--default {
+  background-color: var(--color-accent);
+}
+
+.Toastify
+  .Toastify__progress-bar-theme--colored.Toastify__progress-bar--success {
+  background-color: var(--color-success-700);
+}
+
+.Toastify .Toastify__progress-bar-theme--colored.Toastify__progress-bar--info {
+  background-color: var(--color-info-700);
+}
+
+.Toastify
+  .Toastify__progress-bar-theme--colored.Toastify__progress-bar--warning {
+  background-color: var(--color-warning-600);
+}
+
+.Toastify .Toastify__progress-bar-theme--colored.Toastify__progress-bar--error {
+  background-color: var(--color-danger-700);
+}

@@ -1,0 +1,23 @@
+.set-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.set-header__return {
+  color: var(--color-grey-700);
+}
+
+.set-header__return:hover {
+  color: var(--color-grey-800);
+}
+
+.set-header__return:active {
+  color: var(--color-grey-900);
+}
+
+@media screen and (max-width: 768px) {
+  .set-header__title {
+    font-size: var(--font-scale-4);
+  }
+}

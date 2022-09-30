@@ -1,0 +1,75 @@
+.settings-form > *:not(:last-child) {
+  margin-bottom: var(--size-6);
+}
+
+.settings-form h5 {
+  margin-bottom: var(--size-2);
+}
+
+.settings-form__buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--size-4);
+}
+
+/* Color scheme */
+.settings-form__cubes {
+  display: flex;
+  justify-content: center;
+}
+
+.settings-form__colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-4);
+}
+
+.settings-form__rotate > div {
+  display: flex;
+  gap: var(--size-3);
+}
+
+@media screen and (max-width: 768px) {
+  .settings-form__colors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--size-2);
+  }
+
+  .settings-form__colors select {
+    font-size: var(--font-scale-0);
+    max-width: var(--size-36);
+  }
+
+  .settings-form__rotate > div {
+    gap: var(--size-2);
+  }
+}
+
+/* Lettering scheme */
+
+.settings-form__ls-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--size-4);
+  row-gap: var(--size-6);
+}
+
+.settings-form__ls-inputs > div > :not(:last-child) {
+  margin-bottom: var(--size-2);
+}
+
+.settings-form__ls-inputs label {
+  min-width: var(--size-8);
+  text-align: center;
+}
+
+.settings-form__ls-inputs input {
+  max-width: var(--size-28);
+}
+
+@media screen and (max-width: 768px) {
+  .settings-form__ls-inputs input {
+    max-width: var(--size-20);
+  }
+}

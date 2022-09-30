@@ -1,0 +1,160 @@
+.set-table th {
+  width: 0%;
+}
+
+.set-table td {
+  font-size: var(--font-scale-0);
+  transition: var(--transition-speed-fast);
+}
+
+.set-table td:not(.empty) {
+  cursor: pointer;
+}
+
+.set-table td:hover {
+  color: var(--color-accent);
+}
+
+.set-table td:active {
+  color: var(--color-accent-700);
+}
+
+.table-container--2d {
+  margin: 0 var(--grid-page-gutter);
+}
+
+.table-container--2d .set-table tbody th {
+  position: sticky;
+  left: 0;
+}
+
+.table-container--2d td.empty {
+  background-color: transparent;
+}
+
+.table-container--2d th {
+  cursor: pointer;
+}
+
+.table-container--2d td.highlight:not(.empty) {
+  background-color: var(--color-primary-100);
+  transition: var(--transition-speed-fast);
+}
+
+.table-container--2d td.highlight-x2:not(.empty) {
+  background-color: var(--color-primary-200);
+}
+
+@media screen and (max-width: 768px) {
+  .set-table th,
+  .set-table td {
+    padding: var(--size-px) var(--size-3);
+  }
+}
+
+/* TH Colors */
+.set-table th.color {
+  --border-width: 6px;
+}
+
+.set-table thead th.color {
+  border-bottom: var(--border-width) solid var(--color-primary-800);
+}
+
+.set-table tbody th.color {
+  border-right: var(--border-width) solid var(--color-primary-800);
+}
+
+.set-table thead th.color-white {
+  border-bottom-color: var(--color-cube-white);
+}
+
+.set-table tbody th.color-white {
+  border-right-color: var(--color-cube-white);
+}
+
+.set-table thead th.color-yellow-1 {
+  border-bottom-color: var(--color-cube-yellow-1);
+}
+
+.set-table tbody th.color-yellow-1 {
+  border-right-color: var(--color-cube-yellow-1);
+}
+
+.set-table thead th.color-yellow-2 {
+  border-bottom-color: var(--color-cube-yellow-2);
+}
+
+.set-table tbody th.color-yellow-2 {
+  border-right-color: var(--color-cube-yellow-2);
+}
+
+.set-table thead th.color-green-1 {
+  border-bottom-color: var(--color-cube-green-1);
+}
+
+.set-table tbody th.color-green-1 {
+  border-right-color: var(--color-cube-green-1);
+}
+
+.set-table thead th.color-green-2 {
+  border-bottom-color: var(--color-cube-green-2);
+}
+
+.set-table tbody th.color-green-2 {
+  border-right-color: var(--color-cube-green-2);
+}
+
+.set-table thead th.color-blue-1 {
+  border-bottom-color: var(--color-cube-blue-1);
+}
+
+.set-table tbody th.color-blue-1 {
+  border-right-color: var(--color-cube-blue-1);
+}
+
+.set-table thead th.color-blue-2 {
+  border-bottom-color: var(--color-cube-blue-2);
+}
+
+.set-table tbody th.color-blue-2 {
+  border-right-color: var(--color-cube-blue-2);
+}
+
+.set-table thead th.color-orange-1 {
+  border-bottom-color: var(--color-cube-orange-1);
+}
+
+.set-table tbody th.color-orange-1 {
+  border-right-color: var(--color-cube-orange-1);
+}
+
+.set-table thead th.color-orange-2 {
+  border-bottom-color: var(--color-cube-orange-2);
+}
+
+.set-table tbody th.color-orange-2 {
+  border-right-color: var(--color-cube-orange-2);
+}
+
+.set-table thead th.color-red-1 {
+  border-bottom-color: var(--color-cube-red-1);
+}
+
+.set-table tbody th.color-red-1 {
+  border-right-color: var(--color-cube-red-1);
+}
+
+.set-table thead th.color-red-2 {
+  border-bottom-color: var(--color-cube-red-2);
+}
+
+.set-table tbody th.color-red-2 {
+  border-right-color: var(--color-cube-red-2);
+}
+
+@media screen and (max-width: 768px) {
+  .set-table th.color {
+    --border-width: 4px;
+  }
+}

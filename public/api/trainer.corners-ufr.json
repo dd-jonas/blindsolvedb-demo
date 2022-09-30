@@ -1,0 +1,2303 @@
+{
+  "name": "Corners UFR",
+  "slug": "corners-ufr",
+  "buffers": "UFR",
+  "size": 378,
+  "used": 378,
+  "results": 28,
+  "learned": 28,
+  "review": 0,
+  "subsets": [
+    "UBL",
+    "UBR",
+    "UFL",
+    "LUB",
+    "LUF",
+    "LDF",
+    "LDB",
+    "FUL",
+    "FDR",
+    "FDL",
+    "RUB",
+    "RDB",
+    "RDF",
+    "BUR",
+    "BUL",
+    "BDL",
+    "BDR",
+    "DFL",
+    "DFR",
+    "DBR",
+    "DBL"
+  ],
+  "cases": [
+    {
+      "name": "UFR-UBL-UBR",
+      "slug": "UFR-UBL-UBR",
+      "algorithm": "[R' B' R: [R D R', U']]",
+      "average": 1.366
+    },
+    {
+      "name": "UFR-UBL-UFL",
+      "slug": "UFR-UBL-UFL",
+      "algorithm": "[R' U2 D': [R' D R, U]]",
+      "average": 1.16975
+    },
+    {
+      "name": "UFR-UBL-LUF",
+      "slug": "UFR-UBL-LUF",
+      "algorithm": "[F: [U2, R' D' R]]",
+      "average": 1.857
+    },
+    {
+      "name": "UFR-UBL-LDF",
+      "slug": "UFR-UBL-LDF",
+      "algorithm": "[R' D R, U2]",
+      "average": 1.257
+    },
+    {
+      "name": "UFR-UBL-LDB",
+      "slug": "UFR-UBL-LDB",
+      "algorithm": "[U': [R D' R', U2]]",
+      "average": 1.074
+    },
+    {
+      "name": "UFR-UBL-FUL",
+      "slug": "UFR-UBL-FUL",
+      "algorithm": "[l': [U2, R' D2 R]]",
+      "average": 2.17775
+    },
+    {
+      "name": "UFR-UBL-FDR",
+      "slug": "UFR-UBL-FDR",
+      "algorithm": "[D': [R' D R, U2]]",
+      "average": 1.32866666
+    },
+    {
+      "name": "UFR-UBL-FDL",
+      "slug": "UFR-UBL-FDL",
+      "algorithm": "[D: [R' D' R, U2]]",
+      "average": 1.117
+    },
+    {
+      "name": "UFR-UBL-RUB",
+      "slug": "UFR-UBL-RUB",
+      "algorithm": "[R D R': [R' D2 R, U2]]",
+      "average": 1.455
+    },
+    {
+      "name": "UFR-UBL-RDB",
+      "slug": "UFR-UBL-RDB",
+      "algorithm": "[U': [R D R', U2]]",
+      "average": 1.98
+    },
+    {
+      "name": "UFR-UBL-RDF",
+      "slug": "UFR-UBL-RDF",
+      "algorithm": "[R' D' R, U2]",
+      "average": 1.88
+    },
+    {
+      "name": "UFR-UBL-BUR",
+      "slug": "UFR-UBL-BUR",
+      "algorithm": "[R' D': [U2, R' D R]]",
+      "average": 1.61667
+    },
+    {
+      "name": "UFR-UBL-BDL",
+      "slug": "UFR-UBL-BDL",
+      "algorithm": "[R' D2 R, U2]",
+      "average": 1.23233333
+    },
+    {
+      "name": "UFR-UBL-BDR",
+      "slug": "UFR-UBL-BDR",
+      "algorithm": "[D': [R' D' R, U2]]",
+      "average": 0.9715
+    },
+    {
+      "name": "UFR-UBL-DFL",
+      "slug": "UFR-UBL-DFL",
+      "algorithm": "[R F' R' U': [R D R', U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-UBL-DFR",
+      "slug": "UFR-UBL-DFR",
+      "algorithm": "[R2: [U, R2 D R2 D' R2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-UBL-DBR",
+      "slug": "UFR-UBL-DBR",
+      "algorithm": "[R D' R': [R' D R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-UBL-DBL",
+      "slug": "UFR-UBL-DBL",
+      "algorithm": "[z D' R': [R' D R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-UBR-UBL",
+      "slug": "UFR-UBR-UBL",
+      "algorithm": "[l': [R' D2 R, U]]",
+      "average": 1.67775
+    },
+    {
+      "name": "UFR-UBR-UFL",
+      "slug": "UFR-UBR-UFL",
+      "algorithm": "[R F R': [R' D' R, U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-UBR-LUB",
+      "slug": "UFR-UBR-LUB",
+      "algorithm": "[R: [U, R D R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-UBR-LUF",
+      "slug": "UFR-UBR-LUF",
+      "algorithm": "[R': [R' D' R, U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-UBR-LDF",
+      "slug": "UFR-UBR-LDF",
+      "algorithm": "[R' D R, U]",
+      "average": null
+    },
+    {
+      "name": "UFR-UBR-LDB",
+      "slug": "UFR-UBR-LDB",
+      "algorithm": "[U', R D' R']",
+      "average": null
+    },
+    {
+      "name": "UFR-UBR-FUL",
+      "slug": "UFR-UBR-FUL",
+      "algorithm": "[R: [U2, R D R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-UBR-FDR",
+      "slug": "UFR-UBR-FDR",
+      "algorithm": "[D': [R' D R, U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-UBR-FDL",
+      "slug": "UFR-UBR-FDL",
+      "algorithm": "[D: [R' D' R, U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-UBR-RDB",
+      "slug": "UFR-UBR-RDB",
+      "algorithm": "[U', R D R']",
+      "average": null
+    },
+    {
+      "name": "UFR-UBR-RDF",
+      "slug": "UFR-UBR-RDF",
+      "algorithm": "[R' D' R, U]",
+      "average": null
+    },
+    {
+      "name": "UFR-UBR-BUL",
+      "slug": "UFR-UBR-BUL",
+      "algorithm": "[R': [R' D' R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-UBR-BDL",
+      "slug": "UFR-UBR-BDL",
+      "algorithm": "[R' D2 R, U]",
+      "average": null
+    },
+    {
+      "name": "UFR-UBR-BDR",
+      "slug": "UFR-UBR-BDR",
+      "algorithm": "[D': [R' D' R, U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-UBR-DFL",
+      "slug": "UFR-UBR-DFL",
+      "algorithm": "[x': [D2, R U R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-UBR-DFR",
+      "slug": "UFR-UBR-DFR",
+      "algorithm": "[R2 D' R2 D R2, U]",
+      "average": null
+    },
+    {
+      "name": "UFR-UBR-DBR",
+      "slug": "UFR-UBR-DBR",
+      "algorithm": "[U', R2 D R2 D' R2]",
+      "average": null
+    },
+    {
+      "name": "UFR-UBR-DBL",
+      "slug": "UFR-UBR-DBL",
+      "algorithm": "[x': [R' D' R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-UFL-UBL",
+      "slug": "UFR-UFL-UBL",
+      "algorithm": "[R' U' D': [R' D R, U']]",
+      "average": 1.4754
+    },
+    {
+      "name": "UFR-UFL-UBR",
+      "slug": "UFR-UFL-UBR",
+      "algorithm": "[l D: [U, R' D' R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-UFL-LUB",
+      "slug": "UFR-UFL-LUB",
+      "algorithm": "[U' R: [R D R', U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-UFL-LDF",
+      "slug": "UFR-UFL-LDF",
+      "algorithm": "[R' D R, U']",
+      "average": null
+    },
+    {
+      "name": "UFR-UFL-LDB",
+      "slug": "UFR-UFL-LDB",
+      "algorithm": "[U': [R D' R', U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-UFL-FDR",
+      "slug": "UFR-UFL-FDR",
+      "algorithm": "[D': [R' D R, U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-UFL-FDL",
+      "slug": "UFR-UFL-FDL",
+      "algorithm": "[D: [R' D' R, U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-UFL-RUB",
+      "slug": "UFR-UFL-RUB",
+      "algorithm": "[U' R': [U2, R' D' R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-UFL-RDB",
+      "slug": "UFR-UFL-RDB",
+      "algorithm": "[U': [R D R', U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-UFL-RDF",
+      "slug": "UFR-UFL-RDF",
+      "algorithm": "[R' D' R, U']",
+      "average": null
+    },
+    {
+      "name": "UFR-UFL-BUR",
+      "slug": "UFR-UFL-BUR",
+      "algorithm": "[U' R: [R D R', U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-UFL-BUL",
+      "slug": "UFR-UFL-BUL",
+      "algorithm": "[U' R': [U', R' D' R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-UFL-BDL",
+      "slug": "UFR-UFL-BDL",
+      "algorithm": "[R' D2 R, U']",
+      "average": null
+    },
+    {
+      "name": "UFR-UFL-BDR",
+      "slug": "UFR-UFL-BDR",
+      "algorithm": "[D': [R' D' R, U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-UFL-DFL",
+      "slug": "UFR-UFL-DFL",
+      "algorithm": "[U' x': [R U R', D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-UFL-DFR",
+      "slug": "UFR-UFL-DFR",
+      "algorithm": "[R2 D' R2 D R2, U']",
+      "average": null
+    },
+    {
+      "name": "UFR-UFL-DBR",
+      "slug": "UFR-UFL-DBR",
+      "algorithm": "[R D' R': [R' D R, U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-UFL-DBL",
+      "slug": "UFR-UFL-DBL",
+      "algorithm": "[R' D' R: [R U' R', D]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUB-UBR",
+      "slug": "UFR-LUB-UBR",
+      "algorithm": "[R: [R D R', U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUB-UFL",
+      "slug": "UFR-LUB-UFL",
+      "algorithm": "[U' R: [U2, R D R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUB-LUF",
+      "slug": "UFR-LUB-LUF",
+      "algorithm": "[z: [U, R' D' R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUB-LDF",
+      "slug": "UFR-LUB-LDF",
+      "algorithm": "[U R': [U', R' D R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUB-LDB",
+      "slug": "UFR-LUB-LDB",
+      "algorithm": "[z U: [R' D' R, U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUB-FUL",
+      "slug": "UFR-LUB-FUL",
+      "algorithm": "[l' U: [R D' R', U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUB-FDR",
+      "slug": "UFR-LUB-FDR",
+      "algorithm": "[x': [R, D' L D]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUB-FDL",
+      "slug": "UFR-LUB-FDL",
+      "algorithm": "[R U: [R' D R, U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUB-RUB",
+      "slug": "UFR-LUB-RUB",
+      "algorithm": "[R: [R2 D R2 D' R2, U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUB-RDB",
+      "slug": "UFR-LUB-RDB",
+      "algorithm": "[R D: [R D R', U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUB-RDF",
+      "slug": "UFR-LUB-RDF",
+      "algorithm": "[x: [R' D2 R, U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUB-BUR",
+      "slug": "UFR-LUB-BUR",
+      "algorithm": "[U R': [U', R' D' R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUB-BDL",
+      "slug": "UFR-LUB-BDL",
+      "algorithm": "[U R': [U', R' D2 R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUB-BDR",
+      "slug": "UFR-LUB-BDR",
+      "algorithm": "[R U: [R' D' R, U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUB-DFL",
+      "slug": "UFR-LUB-DFL",
+      "algorithm": "[R: [R D2 R', U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUB-DFR",
+      "slug": "UFR-LUB-DFR",
+      "algorithm": "[D2 R: [R D' R', U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUB-DBR",
+      "slug": "UFR-LUB-DBR",
+      "algorithm": "[D R: [R D' R', U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUB-DBL",
+      "slug": "UFR-LUB-DBL",
+      "algorithm": "[R: [R D' R', U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUF-UBL",
+      "slug": "UFR-LUF-UBL",
+      "algorithm": "[F: [R' D' R, U2]]",
+      "average": 1.19
+    },
+    {
+      "name": "UFR-LUF-UBR",
+      "slug": "UFR-LUF-UBR",
+      "algorithm": "[R': [U', R' D' R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUF-LUB",
+      "slug": "UFR-LUF-LUB",
+      "algorithm": "[z: [R' D' R, U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUF-LDF",
+      "slug": "UFR-LUF-LDF",
+      "algorithm": "[z: [R' D' R, U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUF-LDB",
+      "slug": "UFR-LUF-LDB",
+      "algorithm": "[z: [R' D' R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUF-FDR",
+      "slug": "UFR-LUF-FDR",
+      "algorithm": "[R, U L U']",
+      "average": null
+    },
+    {
+      "name": "UFR-LUF-FDL",
+      "slug": "UFR-LUF-FDL",
+      "algorithm": "[D R' U': [D', R U R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUF-RUB",
+      "slug": "UFR-LUF-RUB",
+      "algorithm": "[F' U: [R' D R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUF-RDB",
+      "slug": "UFR-LUF-RDB",
+      "algorithm": "[R' U': [R' D' R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUF-RDF",
+      "slug": "UFR-LUF-RDF",
+      "algorithm": "[R' U': [D', R U R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUF-BUR",
+      "slug": "UFR-LUF-BUR",
+      "algorithm": "[R', U L U']",
+      "average": null
+    },
+    {
+      "name": "UFR-LUF-BUL",
+      "slug": "UFR-LUF-BUL",
+      "algorithm": "[x': [R U' R', D]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUF-BDL",
+      "slug": "UFR-LUF-BDL",
+      "algorithm": "[x': [R U2 R', D]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUF-BDR",
+      "slug": "UFR-LUF-BDR",
+      "algorithm": "[F: [D', R U R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUF-DFL",
+      "slug": "UFR-LUF-DFL",
+      "algorithm": "[U' R' U: [R U' R', D]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUF-DFR",
+      "slug": "UFR-LUF-DFR",
+      "algorithm": "[R U' R': [R' D' R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUF-DBR",
+      "slug": "UFR-LUF-DBR",
+      "algorithm": "[z: [D2, R U R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-LUF-DBL",
+      "slug": "UFR-LUF-DBL",
+      "algorithm": "[R2 D2: [R U' R', D]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDF-UBL",
+      "slug": "UFR-LDF-UBL",
+      "algorithm": "[U2, R' D R]",
+      "average": 1.676
+    },
+    {
+      "name": "UFR-LDF-UBR",
+      "slug": "UFR-LDF-UBR",
+      "algorithm": "[U, R' D R]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDF-UFL",
+      "slug": "UFR-LDF-UFL",
+      "algorithm": "[U', R' D R]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDF-LUB",
+      "slug": "UFR-LDF-LUB",
+      "algorithm": "[U R': [R' D R, U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDF-LUF",
+      "slug": "UFR-LDF-LUF",
+      "algorithm": "[z: [U', R' D' R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDF-LDB",
+      "slug": "UFR-LDF-LDB",
+      "algorithm": "[z': [R U' R', D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDF-FUL",
+      "slug": "UFR-LDF-FUL",
+      "algorithm": "[R' D: [D' R D R', F2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDF-FDR",
+      "slug": "UFR-LDF-FDR",
+      "algorithm": "[U: [D, R U' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDF-RUB",
+      "slug": "UFR-LDF-RUB",
+      "algorithm": "[U R U: [R' D R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDF-RDB",
+      "slug": "UFR-LDF-RDB",
+      "algorithm": "[U D: [R U' R', D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDF-RDF",
+      "slug": "UFR-LDF-RDF",
+      "algorithm": "[U R' D: [R U' R', D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDF-BUR",
+      "slug": "UFR-LDF-BUR",
+      "algorithm": "[R' U: [R U' R', D]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDF-BUL",
+      "slug": "UFR-LDF-BUL",
+      "algorithm": "[l U2: [R D' R', U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDF-BDL",
+      "slug": "UFR-LDF-BDL",
+      "algorithm": "[U D: [R U' R', D]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDF-BDR",
+      "slug": "UFR-LDF-BDR",
+      "algorithm": "[R' U' R: [U2, R' D R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDF-DFR",
+      "slug": "UFR-LDF-DFR",
+      "algorithm": "[z R' D R: [U', R' D2 R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDF-DBR",
+      "slug": "UFR-LDF-DBR",
+      "algorithm": "[F': [R U' R', D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDF-DBL",
+      "slug": "UFR-LDF-DBL",
+      "algorithm": "[F': [R U' R', D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDB-UBL",
+      "slug": "UFR-LDB-UBL",
+      "algorithm": "[U: [R D' R', U2]]",
+      "average": 1.17825
+    },
+    {
+      "name": "UFR-LDB-UBR",
+      "slug": "UFR-LDB-UBR",
+      "algorithm": "[R D' R', U']",
+      "average": null
+    },
+    {
+      "name": "UFR-LDB-UFL",
+      "slug": "UFR-LDB-UFL",
+      "algorithm": "[U2: [R D' R', U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDB-LUB",
+      "slug": "UFR-LDB-LUB",
+      "algorithm": "[z U2: [R' D' R, U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDB-LUF",
+      "slug": "UFR-LDB-LUF",
+      "algorithm": "[z: [U2, R' D' R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDB-LDF",
+      "slug": "UFR-LDB-LDF",
+      "algorithm": "[z': [D', R U' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDB-FUL",
+      "slug": "UFR-LDB-FUL",
+      "algorithm": "[R U': [R' D2 R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDB-FDR",
+      "slug": "UFR-LDB-FDR",
+      "algorithm": "[U R U': [R D' R', U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDB-FDL",
+      "slug": "UFR-LDB-FDL",
+      "algorithm": "[D2: [R U R', D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDB-RUB",
+      "slug": "UFR-LDB-RUB",
+      "algorithm": "[U R: [R D' R', U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDB-RDB",
+      "slug": "UFR-LDB-RDB",
+      "algorithm": "[R D': [R' U' R, D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDB-RDF",
+      "slug": "UFR-LDB-RDF",
+      "algorithm": "[D2, R U R']",
+      "average": null
+    },
+    {
+      "name": "UFR-LDB-BUR",
+      "slug": "UFR-LDB-BUR",
+      "algorithm": "[U' L U, R]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDB-BUL",
+      "slug": "UFR-LDB-BUL",
+      "algorithm": "[U2 R: [R D' R', U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDB-BDR",
+      "slug": "UFR-LDB-BDR",
+      "algorithm": "[D2: [R U R', D]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDB-DFL",
+      "slug": "UFR-LDB-DFL",
+      "algorithm": "[R D R' D: [R U R', D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDB-DFR",
+      "slug": "UFR-LDB-DFR",
+      "algorithm": "[D2 R: [R D' R', U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-LDB-DBR",
+      "slug": "UFR-LDB-DBR",
+      "algorithm": "[R D' R': [R' D R, U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FUL-UBL",
+      "slug": "UFR-FUL-UBL",
+      "algorithm": "[l': [R' D2 R, U2]]",
+      "average": 1.1935
+    },
+    {
+      "name": "UFR-FUL-UBR",
+      "slug": "UFR-FUL-UBR",
+      "algorithm": "[R: [R D R', U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FUL-LUB",
+      "slug": "UFR-FUL-LUB",
+      "algorithm": "[l' U': [R D' R', U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FUL-LDF",
+      "slug": "UFR-FUL-LDF",
+      "algorithm": "[R' D: [F2, D' R D R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-FUL-LDB",
+      "slug": "UFR-FUL-LDB",
+      "algorithm": "[R U: [R' D2 R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FUL-FDR",
+      "slug": "UFR-FUL-FDR",
+      "algorithm": "[D' R' D: [F2, D' R D R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-FUL-FDL",
+      "slug": "UFR-FUL-FDL",
+      "algorithm": "[R U: [R' D R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FUL-RUB",
+      "slug": "UFR-FUL-RUB",
+      "algorithm": "[R': [U', R2 D' R2 D R2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FUL-RDB",
+      "slug": "UFR-FUL-RDB",
+      "algorithm": "[l' U': [R D R', U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FUL-RDF",
+      "slug": "UFR-FUL-RDF",
+      "algorithm": "[l': [R' D' R', U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FUL-BUR",
+      "slug": "UFR-FUL-BUR",
+      "algorithm": "[R U D': [R' D' R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FUL-BUL",
+      "slug": "UFR-FUL-BUL",
+      "algorithm": "[R U R' D': [U2, R' D R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FUL-BDL",
+      "slug": "UFR-FUL-BDL",
+      "algorithm": "[D R' D: [F2, D' R D R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-FUL-BDR",
+      "slug": "UFR-FUL-BDR",
+      "algorithm": "[R U: [R' D' R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FUL-DFL",
+      "slug": "UFR-FUL-DFL",
+      "algorithm": "[R U D: [R' D' R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FUL-DFR",
+      "slug": "UFR-FUL-DFR",
+      "algorithm": "[D' R U D: [R' D' R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FUL-DBR",
+      "slug": "UFR-FUL-DBR",
+      "algorithm": "[D R: [R D' R', U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FUL-DBL",
+      "slug": "UFR-FUL-DBL",
+      "algorithm": "[R: [R D' R', U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDR-UBL",
+      "slug": "UFR-FDR-UBL",
+      "algorithm": "[D': [U2, R' D R]]",
+      "average": 1.189
+    },
+    {
+      "name": "UFR-FDR-UBR",
+      "slug": "UFR-FDR-UBR",
+      "algorithm": "[D': [U, R' D R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDR-UFL",
+      "slug": "UFR-FDR-UFL",
+      "algorithm": "[D': [U', R' D R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDR-LUB",
+      "slug": "UFR-FDR-LUB",
+      "algorithm": "[x': [D' L D, R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDR-LUF",
+      "slug": "UFR-FDR-LUF",
+      "algorithm": "[U L U', R]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDR-LDF",
+      "slug": "UFR-FDR-LDF",
+      "algorithm": "[U: [R U' R', D]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDR-LDB",
+      "slug": "UFR-FDR-LDB",
+      "algorithm": "[U R U2: [R D' R', U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDR-FUL",
+      "slug": "UFR-FDR-FUL",
+      "algorithm": "[D' R' D: [D' R D R', F2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDR-FDL",
+      "slug": "UFR-FDR-FDL",
+      "algorithm": "[U L' U', R]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDR-RUB",
+      "slug": "UFR-FDR-RUB",
+      "algorithm": "[U' R' U: [R D R', U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDR-RDB",
+      "slug": "UFR-FDR-RDB",
+      "algorithm": "[U: [R U' R', D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDR-BUR",
+      "slug": "UFR-FDR-BUR",
+      "algorithm": "[D' R' U: [R U' R', D]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDR-BUL",
+      "slug": "UFR-FDR-BUL",
+      "algorithm": "[R: [U' L' U, R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDR-BDL",
+      "slug": "UFR-FDR-BDL",
+      "algorithm": "[U: [R U' R', D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDR-BDR",
+      "slug": "UFR-FDR-BDR",
+      "algorithm": "[D R D: [R' U' R, D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDR-DFL",
+      "slug": "UFR-FDR-DFL",
+      "algorithm": "[U R U': [F2, U R' U' R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDR-DBR",
+      "slug": "UFR-FDR-DBR",
+      "algorithm": "[D R2 D2: [R U R', D]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDR-DBL",
+      "slug": "UFR-FDR-DBL",
+      "algorithm": "[z: [R U2 R', D]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDL-UBL",
+      "slug": "UFR-FDL-UBL",
+      "algorithm": "[D: [U2, R' D' R]]",
+      "average": 1.188
+    },
+    {
+      "name": "UFR-FDL-UBR",
+      "slug": "UFR-FDL-UBR",
+      "algorithm": "[D: [U, R' D' R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDL-UFL",
+      "slug": "UFR-FDL-UFL",
+      "algorithm": "[D: [U', R' D' R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDL-LUB",
+      "slug": "UFR-FDL-LUB",
+      "algorithm": "[R U2: [R' D R, U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDL-LUF",
+      "slug": "UFR-FDL-LUF",
+      "algorithm": "[D R' U': [R U R', D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDL-LDB",
+      "slug": "UFR-FDL-LDB",
+      "algorithm": "[D: [R U R', D]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDL-FUL",
+      "slug": "UFR-FDL-FUL",
+      "algorithm": "[R U': [R' D R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDL-FDR",
+      "slug": "UFR-FDL-FDR",
+      "algorithm": "[R, U L' U']",
+      "average": null
+    },
+    {
+      "name": "UFR-FDL-RUB",
+      "slug": "UFR-FDL-RUB",
+      "algorithm": "[F' U: [R' D' R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDL-RDB",
+      "slug": "UFR-FDL-RDB",
+      "algorithm": "[R D2: [R' U' R, D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDL-RDF",
+      "slug": "UFR-FDL-RDF",
+      "algorithm": "[D, R U R']",
+      "average": null
+    },
+    {
+      "name": "UFR-FDL-BUR",
+      "slug": "UFR-FDL-BUR",
+      "algorithm": "[z: [D', R U' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDL-BUL",
+      "slug": "UFR-FDL-BUL",
+      "algorithm": "[D x': [R U' R', D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDL-BDL",
+      "slug": "UFR-FDL-BDL",
+      "algorithm": "[D' R D': [R' U' R, D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDL-BDR",
+      "slug": "UFR-FDL-BDR",
+      "algorithm": "[D: [R U R', D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDL-DFR",
+      "slug": "UFR-FDL-DFR",
+      "algorithm": "[R U' R': [R' D R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDL-DBR",
+      "slug": "UFR-FDL-DBR",
+      "algorithm": "[D R: [R D' R', U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-FDL-DBL",
+      "slug": "UFR-FDL-DBL",
+      "algorithm": "[z' U': [R U R', D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-RUB-UBL",
+      "slug": "UFR-RUB-UBL",
+      "algorithm": "[R D R': [U2, R' D2 R]]",
+      "average": 1.1814
+    },
+    {
+      "name": "UFR-RUB-UFL",
+      "slug": "UFR-RUB-UFL",
+      "algorithm": "[U' R': [R' D' R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RUB-LUB",
+      "slug": "UFR-RUB-LUB",
+      "algorithm": "[R: [U, R2 D R2 D' R2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RUB-LUF",
+      "slug": "UFR-RUB-LUF",
+      "algorithm": "[F' U': [R' D R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RUB-LDF",
+      "slug": "UFR-RUB-LDF",
+      "algorithm": "[U R U': [R' D R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RUB-LDB",
+      "slug": "UFR-RUB-LDB",
+      "algorithm": "[U R: [U2, R D' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-RUB-FUL",
+      "slug": "UFR-RUB-FUL",
+      "algorithm": "[R': [R2 D' R2 D R2, U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-RUB-FDR",
+      "slug": "UFR-RUB-FDR",
+      "algorithm": "[U' R' U': [R D R', U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RUB-FDL",
+      "slug": "UFR-RUB-FDL",
+      "algorithm": "[F' U': [R' D' R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RUB-RDB",
+      "slug": "UFR-RUB-RDB",
+      "algorithm": "[U R U': [R' D' R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RUB-RDF",
+      "slug": "UFR-RUB-RDF",
+      "algorithm": "[R: [U', R2 D R2 D' R2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RUB-BUL",
+      "slug": "UFR-RUB-BUL",
+      "algorithm": "[U R: [U2, R D R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-RUB-BDL",
+      "slug": "UFR-RUB-BDL",
+      "algorithm": "[U' R' U': [R D' R', U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RUB-BDR",
+      "slug": "UFR-RUB-BDR",
+      "algorithm": "[U D R: [U2, R D' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-RUB-DFL",
+      "slug": "UFR-RUB-DFL",
+      "algorithm": "[U' R': [R' D R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RUB-DFR",
+      "slug": "UFR-RUB-DFR",
+      "algorithm": "[U D' R' D: [D' R D R', F2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RUB-DBR",
+      "slug": "UFR-RUB-DBR",
+      "algorithm": "[F': [U2, R D R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-RUB-DBL",
+      "slug": "UFR-RUB-DBL",
+      "algorithm": "[U' D R': [R' D R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDB-UBL",
+      "slug": "UFR-RDB-UBL",
+      "algorithm": "[U: [R D R', U2]]",
+      "average": 1.27166668
+    },
+    {
+      "name": "UFR-RDB-UBR",
+      "slug": "UFR-RDB-UBR",
+      "algorithm": "[R D R', U']",
+      "average": null
+    },
+    {
+      "name": "UFR-RDB-UFL",
+      "slug": "UFR-RDB-UFL",
+      "algorithm": "[U2: [R D R', U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDB-LUB",
+      "slug": "UFR-RDB-LUB",
+      "algorithm": "[R D: [U, R D R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDB-LUF",
+      "slug": "UFR-RDB-LUF",
+      "algorithm": "[R' U: [R' D' R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDB-LDF",
+      "slug": "UFR-RDB-LDF",
+      "algorithm": "[U D': [R U' R', D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDB-LDB",
+      "slug": "UFR-RDB-LDB",
+      "algorithm": "[R D: [R' U' R, D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDB-FUL",
+      "slug": "UFR-RDB-FUL",
+      "algorithm": "[l' U: [R D R', U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDB-FDR",
+      "slug": "UFR-RDB-FDR",
+      "algorithm": "[U: [D', R U' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDB-FDL",
+      "slug": "UFR-RDB-FDL",
+      "algorithm": "[R D: [R' U' R, D]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDB-RUB",
+      "slug": "UFR-RDB-RUB",
+      "algorithm": "[U R U: [R' D' R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDB-RDF",
+      "slug": "UFR-RDB-RDF",
+      "algorithm": "[R D': [R' D R, U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDB-BUR",
+      "slug": "UFR-RDB-BUR",
+      "algorithm": "[U' R U: [R' U' R, D]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDB-BUL",
+      "slug": "UFR-RDB-BUL",
+      "algorithm": "[R' U: [R' D' R, U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDB-BDL",
+      "slug": "UFR-RDB-BDL",
+      "algorithm": "[U D': [R U' R', D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDB-DFL",
+      "slug": "UFR-RDB-DFL",
+      "algorithm": "[U' R': [R' D R, U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDB-DFR",
+      "slug": "UFR-RDB-DFR",
+      "algorithm": "[D' R: [R' U R U', F2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDB-DBL",
+      "slug": "UFR-RDB-DBL",
+      "algorithm": "[R2 D2: [R U R', D]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDF-UBL",
+      "slug": "UFR-RDF-UBL",
+      "algorithm": "[U2, R' D' R]",
+      "average": 1.16420001
+    },
+    {
+      "name": "UFR-RDF-UBR",
+      "slug": "UFR-RDF-UBR",
+      "algorithm": "[U, R' D' R]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDF-UFL",
+      "slug": "UFR-RDF-UFL",
+      "algorithm": "[U', R' D' R]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDF-LUB",
+      "slug": "UFR-RDF-LUB",
+      "algorithm": "[x: [U, R' D2 R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDF-LUF",
+      "slug": "UFR-RDF-LUF",
+      "algorithm": "[R' U': [R U R', D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDF-LDF",
+      "slug": "UFR-RDF-LDF",
+      "algorithm": "[U R' D': [R U' R', D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDF-LDB",
+      "slug": "UFR-RDF-LDB",
+      "algorithm": "[R U R', D2]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDF-FUL",
+      "slug": "UFR-RDF-FUL",
+      "algorithm": "[l': [U2, R' D' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDF-FDL",
+      "slug": "UFR-RDF-FDL",
+      "algorithm": "[R U R', D]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDF-RUB",
+      "slug": "UFR-RDF-RUB",
+      "algorithm": "[R: [R2 D R2 D' R2, U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDF-RDB",
+      "slug": "UFR-RDF-RDB",
+      "algorithm": "[R D': [U, R' D R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDF-BUR",
+      "slug": "UFR-RDF-BUR",
+      "algorithm": "[R D: [R D' R', U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDF-BUL",
+      "slug": "UFR-RDF-BUL",
+      "algorithm": "[x': [R U' R', D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDF-BDL",
+      "slug": "UFR-RDF-BDL",
+      "algorithm": "[x': [R U2 R', D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDF-BDR",
+      "slug": "UFR-RDF-BDR",
+      "algorithm": "[R U R', D']",
+      "average": null
+    },
+    {
+      "name": "UFR-RDF-DFL",
+      "slug": "UFR-RDF-DFL",
+      "algorithm": "[R D: [U, R' D' R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDF-DBR",
+      "slug": "UFR-RDF-DBR",
+      "algorithm": "[R: [U, R' D R U' R D' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-RDF-DBL",
+      "slug": "UFR-RDF-DBL",
+      "algorithm": "[R: [R D' R', U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUR-UBL",
+      "slug": "UFR-BUR-UBL",
+      "algorithm": "[R' D': [R' D R, U2]]",
+      "average": 1.178
+    },
+    {
+      "name": "UFR-BUR-UFL",
+      "slug": "UFR-BUR-UFL",
+      "algorithm": "[U' R: [U, R D R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUR-LUB",
+      "slug": "UFR-BUR-LUB",
+      "algorithm": "[U R': [R' D' R, U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUR-LUF",
+      "slug": "UFR-BUR-LUF",
+      "algorithm": "[U L U', R']",
+      "average": null
+    },
+    {
+      "name": "UFR-BUR-LDF",
+      "slug": "UFR-BUR-LDF",
+      "algorithm": "[R' U: [D, R U' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUR-LDB",
+      "slug": "UFR-BUR-LDB",
+      "algorithm": "[R, U' L U]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUR-FUL",
+      "slug": "UFR-BUR-FUL",
+      "algorithm": "[R U' D': [R' D' R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUR-FDR",
+      "slug": "UFR-BUR-FDR",
+      "algorithm": "[D' R' U: [D, R U' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUR-FDL",
+      "slug": "UFR-BUR-FDL",
+      "algorithm": "[z: [R U' R', D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUR-RDB",
+      "slug": "UFR-BUR-RDB",
+      "algorithm": "[U' R U: [D, R' U' R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUR-RDF",
+      "slug": "UFR-BUR-RDF",
+      "algorithm": "[R D: [U', R D' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUR-BUL",
+      "slug": "UFR-BUR-BUL",
+      "algorithm": "[R, U' L' U]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUR-BDL",
+      "slug": "UFR-BUR-BDL",
+      "algorithm": "[R' U: [D2, R U' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUR-BDR",
+      "slug": "UFR-BUR-BDR",
+      "algorithm": "[R U': [R' U R, D]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUR-DFL",
+      "slug": "UFR-BUR-DFL",
+      "algorithm": "[U D R' U': [R U R', D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUR-DFR",
+      "slug": "UFR-BUR-DFR",
+      "algorithm": "[U R' U': [R U R', D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUR-DBR",
+      "slug": "UFR-BUR-DBR",
+      "algorithm": "[D R U': [R' U R, D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUR-DBL",
+      "slug": "UFR-BUR-DBL",
+      "algorithm": "[R U': [R' U R, D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUL-UBR",
+      "slug": "UFR-BUL-UBR",
+      "algorithm": "[R': [U2, R' D' R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUL-UFL",
+      "slug": "UFR-BUL-UFL",
+      "algorithm": "[U' R': [R' D' R, U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUL-LUF",
+      "slug": "UFR-BUL-LUF",
+      "algorithm": "[x': [D, R U' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUL-LDF",
+      "slug": "UFR-BUL-LDF",
+      "algorithm": "[l U': [R D' R', U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUL-LDB",
+      "slug": "UFR-BUL-LDB",
+      "algorithm": "[U2 R: [U, R D' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUL-FUL",
+      "slug": "UFR-BUL-FUL",
+      "algorithm": "[R U R' D': [R' D R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUL-FDR",
+      "slug": "UFR-BUL-FDR",
+      "algorithm": "[R2: [U' L' U, R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUL-FDL",
+      "slug": "UFR-BUL-FDL",
+      "algorithm": "[D x': [D', R U' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUL-RUB",
+      "slug": "UFR-BUL-RUB",
+      "algorithm": "[U R: [R D R', U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUL-RDB",
+      "slug": "UFR-BUL-RDB",
+      "algorithm": "[R' U2: [R' D' R, U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUL-RDF",
+      "slug": "UFR-BUL-RDF",
+      "algorithm": "[x': [D', R U' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUL-BUR",
+      "slug": "UFR-BUL-BUR",
+      "algorithm": "[U' L' U, R]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUL-BDL",
+      "slug": "UFR-BUL-BDL",
+      "algorithm": "[U' R' U': [R D' R', U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUL-BDR",
+      "slug": "UFR-BUL-BDR",
+      "algorithm": "[x' U' D': [R D' R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUL-DFL",
+      "slug": "UFR-BUL-DFL",
+      "algorithm": "[U' R': [R' D R, U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUL-DFR",
+      "slug": "UFR-BUL-DFR",
+      "algorithm": "[U' D' R': [R' D R, U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUL-DBR",
+      "slug": "UFR-BUL-DBR",
+      "algorithm": "[R': [U' L' U, R2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BUL-DBL",
+      "slug": "UFR-BUL-DBL",
+      "algorithm": "[U' D R': [R' D R, U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDL-UBL",
+      "slug": "UFR-BDL-UBL",
+      "algorithm": "[U2, R' D2 R]",
+      "average": 1.1775
+    },
+    {
+      "name": "UFR-BDL-UBR",
+      "slug": "UFR-BDL-UBR",
+      "algorithm": "[U, R' D2 R]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDL-UFL",
+      "slug": "UFR-BDL-UFL",
+      "algorithm": "[U', R' D2 R]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDL-LUB",
+      "slug": "UFR-BDL-LUB",
+      "algorithm": "[U R': [R' D2 R, U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDL-LUF",
+      "slug": "UFR-BDL-LUF",
+      "algorithm": "[x': [D, R U2 R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDL-LDF",
+      "slug": "UFR-BDL-LDF",
+      "algorithm": "[U D2: [R U' R', D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDL-FUL",
+      "slug": "UFR-BDL-FUL",
+      "algorithm": "[D R' D: [D' R D R', F2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDL-FDR",
+      "slug": "UFR-BDL-FDR",
+      "algorithm": "[U: [D2, R U' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDL-FDL",
+      "slug": "UFR-BDL-FDL",
+      "algorithm": "[D' R D: [R' U' R, D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDL-RUB",
+      "slug": "UFR-BDL-RUB",
+      "algorithm": "[U' R' U: [R D' R', U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDL-RDB",
+      "slug": "UFR-BDL-RDB",
+      "algorithm": "[U D2: [R U' R', D]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDL-RDF",
+      "slug": "UFR-BDL-RDF",
+      "algorithm": "[x': [D', R U2 R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDL-BUR",
+      "slug": "UFR-BDL-BUR",
+      "algorithm": "[R' U: [R U' R', D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDL-BUL",
+      "slug": "UFR-BDL-BUL",
+      "algorithm": "[U' R' U2: [R D' R', U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDL-BDR",
+      "slug": "UFR-BDL-BDR",
+      "algorithm": "[U': [R', U' L U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDL-DFL",
+      "slug": "UFR-BDL-DFL",
+      "algorithm": "[x': [D2, R U2 R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDL-DFR",
+      "slug": "UFR-BDL-DFR",
+      "algorithm": "[U' D' R': [R' D R, U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDL-DBR",
+      "slug": "UFR-BDL-DBR",
+      "algorithm": "[U R: [D2, R U' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDR-UBL",
+      "slug": "UFR-BDR-UBL",
+      "algorithm": "[D': [U2, R' D' R]]",
+      "average": 1.67
+    },
+    {
+      "name": "UFR-BDR-UBR",
+      "slug": "UFR-BDR-UBR",
+      "algorithm": "[D': [U, R' D' R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDR-UFL",
+      "slug": "UFR-BDR-UFL",
+      "algorithm": "[D': [U', R' D' R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDR-LUB",
+      "slug": "UFR-BDR-LUB",
+      "algorithm": "[R U2: [R' D' R, U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDR-LUF",
+      "slug": "UFR-BDR-LUF",
+      "algorithm": "[F: [R U R', D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDR-LDF",
+      "slug": "UFR-BDR-LDF",
+      "algorithm": "[R' U' R: [R' D R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDR-LDB",
+      "slug": "UFR-BDR-LDB",
+      "algorithm": "[D': [R U R', D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDR-FUL",
+      "slug": "UFR-BDR-FUL",
+      "algorithm": "[R U': [R' D' R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDR-FDR",
+      "slug": "UFR-BDR-FDR",
+      "algorithm": "[D R D': [R' U' R, D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDR-FDL",
+      "slug": "UFR-BDR-FDL",
+      "algorithm": "[D': [R U R', D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDR-RUB",
+      "slug": "UFR-BDR-RUB",
+      "algorithm": "[U D R: [R D' R', U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDR-RDF",
+      "slug": "UFR-BDR-RDF",
+      "algorithm": "[D', R U R']",
+      "average": null
+    },
+    {
+      "name": "UFR-BDR-BUR",
+      "slug": "UFR-BDR-BUR",
+      "algorithm": "[R U': [D, R' U R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDR-BUL",
+      "slug": "UFR-BDR-BUL",
+      "algorithm": "[x' U D': [R D' R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDR-BDL",
+      "slug": "UFR-BDR-BDL",
+      "algorithm": "[U': [U' L U, R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDR-DFL",
+      "slug": "UFR-BDR-DFL",
+      "algorithm": "[R U: [R U R', D]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDR-DFR",
+      "slug": "UFR-BDR-DFR",
+      "algorithm": "[D' R D: [U, R' D' R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-BDR-DBL",
+      "slug": "UFR-BDR-DBL",
+      "algorithm": "[l' D': [R U R', D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFL-UBL",
+      "slug": "UFR-DFL-UBL",
+      "algorithm": "[R F' R' U: [R D R', U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFL-UBR",
+      "slug": "UFR-DFL-UBR",
+      "algorithm": "[x': [R U R', D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFL-UFL",
+      "slug": "UFR-DFL-UFL",
+      "algorithm": "[U' x': [D2, R U R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFL-LUB",
+      "slug": "UFR-DFL-LUB",
+      "algorithm": "[R: [U, R D2 R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFL-LUF",
+      "slug": "UFR-DFL-LUF",
+      "algorithm": "[U' R' U: [D, R U' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFL-LDB",
+      "slug": "UFR-DFL-LDB",
+      "algorithm": "[R D R' D': [R U R', D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFL-FUL",
+      "slug": "UFR-DFL-FUL",
+      "algorithm": "[R U D: [U2, R' D' R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFL-FDR",
+      "slug": "UFR-DFL-FDR",
+      "algorithm": "[U R U': [U R' U' R, F2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFL-RUB",
+      "slug": "UFR-DFL-RUB",
+      "algorithm": "[U' R': [U2, R' D R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFL-RDB",
+      "slug": "UFR-DFL-RDB",
+      "algorithm": "[U' R': [U, R' D R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFL-RDF",
+      "slug": "UFR-DFL-RDF",
+      "algorithm": "[R D: [R' D' R, U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFL-BUR",
+      "slug": "UFR-DFL-BUR",
+      "algorithm": "[U D R' U': [D', R U R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFL-BUL",
+      "slug": "UFR-DFL-BUL",
+      "algorithm": "[U' R': [U', R' D R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFL-BDL",
+      "slug": "UFR-DFL-BDL",
+      "algorithm": "[x': [R U2 R', D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFL-BDR",
+      "slug": "UFR-DFL-BDR",
+      "algorithm": "[R U: [D, R U R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFL-DFR",
+      "slug": "UFR-DFL-DFR",
+      "algorithm": "[U' R' F': [R U' R', D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFL-DBR",
+      "slug": "UFR-DFL-DBR",
+      "algorithm": "[R U' R': [D2, R' U R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFL-DBL",
+      "slug": "UFR-DFL-DBL",
+      "algorithm": "[x U: [R' D R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFR-UBL",
+      "slug": "UFR-DFR-UBL",
+      "algorithm": "[R2: [R2 D R2 D' R2, U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFR-UBR",
+      "slug": "UFR-DFR-UBR",
+      "algorithm": "[U, R2 D' R2 D R2]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFR-UFL",
+      "slug": "UFR-DFR-UFL",
+      "algorithm": "[U', R2 D' R2 D R2]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFR-LUB",
+      "slug": "UFR-DFR-LUB",
+      "algorithm": "[D2 R: [U, R D' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFR-LUF",
+      "slug": "UFR-DFR-LUF",
+      "algorithm": "[R U' R': [U2, R' D' R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFR-LDF",
+      "slug": "UFR-DFR-LDF",
+      "algorithm": "[z R' D R: [R' D2 R, U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFR-LDB",
+      "slug": "UFR-DFR-LDB",
+      "algorithm": "[D2 R: [U', R D' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFR-FUL",
+      "slug": "UFR-DFR-FUL",
+      "algorithm": "[D' R U D: [U2, R' D' R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFR-FDL",
+      "slug": "UFR-DFR-FDL",
+      "algorithm": "[R U' R': [U2, R' D R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFR-RUB",
+      "slug": "UFR-DFR-RUB",
+      "algorithm": "[U D' R' D: [F2, D' R D R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFR-RDB",
+      "slug": "UFR-DFR-RDB",
+      "algorithm": "[D' R: [F2, R' U R U']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFR-BUR",
+      "slug": "UFR-DFR-BUR",
+      "algorithm": "[U R' U': [D', R U R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFR-BUL",
+      "slug": "UFR-DFR-BUL",
+      "algorithm": "[U' D' R': [U', R' D R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFR-BDL",
+      "slug": "UFR-DFR-BDL",
+      "algorithm": "[U' D' R': [U, R' D R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFR-BDR",
+      "slug": "UFR-DFR-BDR",
+      "algorithm": "[D' R D: [R' D' R, U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFR-DFL",
+      "slug": "UFR-DFR-DFL",
+      "algorithm": "[U' R' F': [D', R U' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFR-DBR",
+      "slug": "UFR-DFR-DBR",
+      "algorithm": "[F' R U': [R' D' R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DFR-DBL",
+      "slug": "UFR-DFR-DBL",
+      "algorithm": "[R U' R' U: [R D' R', U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBR-UBL",
+      "slug": "UFR-DBR-UBL",
+      "algorithm": "[R D' R': [U2, R' D R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBR-UBR",
+      "slug": "UFR-DBR-UBR",
+      "algorithm": "[R2 D R2 D' R2, U']",
+      "average": null
+    },
+    {
+      "name": "UFR-DBR-UFL",
+      "slug": "UFR-DBR-UFL",
+      "algorithm": "[R D' R': [U', R' D R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBR-LUB",
+      "slug": "UFR-DBR-LUB",
+      "algorithm": "[D R: [U, R D' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBR-LUF",
+      "slug": "UFR-DBR-LUF",
+      "algorithm": "[z: [R U R', D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBR-LDF",
+      "slug": "UFR-DBR-LDF",
+      "algorithm": "[F': [D', R U' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBR-LDB",
+      "slug": "UFR-DBR-LDB",
+      "algorithm": "[R D' R': [U, R' D R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBR-FUL",
+      "slug": "UFR-DBR-FUL",
+      "algorithm": "[D R: [U2, R D' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBR-FDR",
+      "slug": "UFR-DBR-FDR",
+      "algorithm": "[D R2 D': [R U R', D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBR-FDL",
+      "slug": "UFR-DBR-FDL",
+      "algorithm": "[D R: [U', R D' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBR-RUB",
+      "slug": "UFR-DBR-RUB",
+      "algorithm": "[F': [R D R', U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBR-RDF",
+      "slug": "UFR-DBR-RDF",
+      "algorithm": "[R: [R' D R U' R D' R', U]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBR-BUR",
+      "slug": "UFR-DBR-BUR",
+      "algorithm": "[D R U': [D', R' U R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBR-BUL",
+      "slug": "UFR-DBR-BUL",
+      "algorithm": "[R: [U' L' U, R2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBR-BDL",
+      "slug": "UFR-DBR-BDL",
+      "algorithm": "[U R: [R U' R', D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBR-DFL",
+      "slug": "UFR-DBR-DFL",
+      "algorithm": "[R U' R': [R' U R, D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBR-DFR",
+      "slug": "UFR-DBR-DFR",
+      "algorithm": "[F' R U: [R' D' R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBR-DBL",
+      "slug": "UFR-DBR-DBL",
+      "algorithm": "[z: [R U2 R', D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBL-UBL",
+      "slug": "UFR-DBL-UBL",
+      "algorithm": "[z D' R': [U2, R' D R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBL-UBR",
+      "slug": "UFR-DBL-UBR",
+      "algorithm": "[x': [U2, R' D' R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBL-UFL",
+      "slug": "UFR-DBL-UFL",
+      "algorithm": "[R' D' R: [D, R U' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBL-LUB",
+      "slug": "UFR-DBL-LUB",
+      "algorithm": "[R: [U, R D' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBL-LUF",
+      "slug": "UFR-DBL-LUF",
+      "algorithm": "[R2 D': [R U' R', D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBL-LDF",
+      "slug": "UFR-DBL-LDF",
+      "algorithm": "[F': [D2, R U' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBL-FUL",
+      "slug": "UFR-DBL-FUL",
+      "algorithm": "[R: [U2, R D' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBL-FDR",
+      "slug": "UFR-DBL-FDR",
+      "algorithm": "[z: [D, R U2 R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBL-FDL",
+      "slug": "UFR-DBL-FDL",
+      "algorithm": "[z' U': [D', R U R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBL-RUB",
+      "slug": "UFR-DBL-RUB",
+      "algorithm": "[U' D R': [U2, R' D R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBL-RDB",
+      "slug": "UFR-DBL-RDB",
+      "algorithm": "[R2 D': [R U R', D']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBL-RDF",
+      "slug": "UFR-DBL-RDF",
+      "algorithm": "[R: [U', R D' R']]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBL-BUR",
+      "slug": "UFR-DBL-BUR",
+      "algorithm": "[R U': [D', R' U R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBL-BUL",
+      "slug": "UFR-DBL-BUL",
+      "algorithm": "[U' D R': [U', R' D R]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBL-BDR",
+      "slug": "UFR-DBL-BDR",
+      "algorithm": "[l' D: [R U R', D2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBL-DFL",
+      "slug": "UFR-DBL-DFL",
+      "algorithm": "[x U': [R' D R, U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBL-DFR",
+      "slug": "UFR-DBL-DFR",
+      "algorithm": "[R U' R' U': [R D' R', U2]]",
+      "average": null
+    },
+    {
+      "name": "UFR-DBL-DBR",
+      "slug": "UFR-DBL-DBR",
+      "algorithm": "[z: [D2, R U2 R']]",
+      "average": null
+    }
+  ]
+}

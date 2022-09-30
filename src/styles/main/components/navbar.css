@@ -1,0 +1,112 @@
+#root > div > header {
+  padding: var(--size-2) var(--grid-page-gutter);
+  box-shadow: var(--elevation-3);
+  color: var(--color-white);
+  background-color: var(--color-primary-800);
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--size-10);
+  align-items: center;
+  font-family: var(--font-family-rubik);
+}
+
+.nav__brand > a {
+  display: flex;
+  align-items: center;
+  column-gap: var(--size-3);
+  font-size: var(--font-scale-3);
+  font-weight: var(--font-weight-medium);
+}
+
+.nav__brand > a > img {
+  position: relative;
+  width: var(--size-9);
+  height: var(--size-9);
+}
+
+.nav__brand > a > img::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: var(--size-full);
+  height: var(--size-full);
+  border: var(--size-px) solid var(--color-primary-900);
+}
+
+.nav__brand > a > p > span {
+  color: var(--color-accent);
+}
+
+.nav__expand {
+  display: none;
+}
+
+.nav__expand button {
+  color: var(--color-white);
+}
+
+.nav__expand button:hover,
+.nav__expand button:active {
+  color: var(--color-white);
+  background-color: var(--color-primary-900);
+}
+
+.nav__content {
+  display: flex;
+  align-items: center;
+  gap: var(--size-8);
+}
+
+.nav__content .nav__separator {
+  flex-grow: 1;
+}
+
+.nav__content a {
+  padding: var(--size-2) var(--size-4);
+  transition: color var(--transition-speed-fast);
+}
+
+.nav__content a:hover {
+  color: var(--color-accent);
+}
+
+.nav__content a.active {
+  border-radius: var(--size-px);
+  box-shadow: var(--elevation-1) inset;
+  background-color: var(--color-primary-900);
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    row-gap: var(--size-4);
+    column-gap: var(--size-6);
+  }
+
+  .nav__expand {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .nav__content {
+    grid-column: 1 / -1;
+    flex-direction: column;
+    align-items: end;
+    gap: var(--size-2);
+  }
+
+  .nav__content--collapsed {
+    display: none;
+  }
+
+  .nav__content a {
+    padding: var(--size-1) var(--size-4);
+  }
+
+  .nav__separator {
+    display: none;
+  }
+}

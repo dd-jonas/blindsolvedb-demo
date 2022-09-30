@@ -1,0 +1,43 @@
+.table-container {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-accent) var(--color-grey-200);
+}
+
+.table-container::-webkit-scrollbar {
+  height: var(--size-2);
+  background-color: var(--color-grey-200);
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background-color: var(--color-accent);
+}
+
+.table {
+  width: 100%;
+  background-color: var(--color-grey-200);
+  border-spacing: 1px;
+  user-select: none;
+}
+
+.table * {
+  white-space: nowrap;
+}
+
+.table th {
+  color: var(--color-grey-100);
+  background-color: var(--color-primary-800);
+}
+
+.table td {
+  background-color: var(--color-white);
+}
+
+.table th,
+.table td {
+  padding: var(--size-1) var(--size-4);
+}
+
+.table td.center {
+  text-align: center;
+}

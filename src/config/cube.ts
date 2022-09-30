@@ -1,0 +1,17 @@
+export const colors = {
+  White: 'white',
+  'Canary Yellow': 'yellow-1',
+  'Lemon Yellow': 'yellow-2',
+  'Light Green': 'green-1',
+  'Lime Green': 'green-2',
+  'Carolina Blue': 'blue-1',
+  'Ultramarine Blue': 'blue-2',
+  'Tangerine Orange': 'orange-1',
+  'Pumpkin Orange': 'orange-2',
+  'Imperial Red': 'red-1',
+  'Vermillion Red ': 'red-2',
+  Pink: 'pink',
+  Purple: 'purple',
+  Brown: 'brown',
+  Black: 'black',
+};

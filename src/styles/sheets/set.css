@@ -1,0 +1,63 @@
+.set {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns:
+    minmax(var(--grid-page-gutter), 1fr)
+    minmax(0, calc(var(--grid-page-width) / 2))
+    minmax(0, calc(var(--grid-page-width) / 2))
+    minmax(var(--grid-page-gutter), 1fr);
+  row-gap: var(--size-6);
+}
+
+.set > * {
+  grid-column: 2 / 4;
+}
+
+.set > .tabs {
+  grid-column: 2 / 3;
+}
+
+.set > .set__actions {
+  grid-column: 3 / 4;
+  justify-self: end;
+}
+
+.set > .table-container--2d {
+  grid-column: 1 / -1;
+}
+
+.set__actions {
+  display: flex;
+  gap: var(--size-2);
+}
+
+@media screen and (max-width: 768px) {
+  .set {
+    row-gap: var(--size-4);
+    column-gap: 0;
+  }
+
+  .set__actions {
+    display: flex;
+    gap: var(--size-1);
+  }
+
+  .set__actions button {
+    padding: var(--size-1) var(--size-1);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .set {
+    row-gap: var(--size-2);
+  }
+
+  .set > .tabs {
+    grid-column: 2 / 4;
+  }
+
+  .set > .set__actions {
+    grid-column: 2 / 4;
+    justify-self: end;
+  }
+}

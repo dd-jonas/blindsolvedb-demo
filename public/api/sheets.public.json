@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Corners",
+    "display_scramble": "D2 R U R D' R' U' R D R2 D2",
+    "sets": [
+      { "name": "Corners UFR", "slug": "corners-ufr" },
+      { "name": "Corners UBL", "slug": "corners-ubl" }
+    ]
+  },
+  {
+    "name": "Edges",
+    "display_scramble": "R' F R' S R2 S' R' F' R",
+    "sets": [{ "name": "Edges UF", "slug": "edges-uf" }]
+  },
+  {
+    "name": "Parity",
+    "display_scramble": "U' F' L F2 U' F' U' F U F' L' F U F'",
+    "sets": [{ "name": "Parity UF-UR UFR", "slug": "parity-uf-ur-ufr" }]
+  },
+  {
+    "name": "Twists",
+    "display_scramble": "R' D R D' R' D R U' R' D' R D R' D' R U",
+    "sets": [{ "name": "2-Twists UFR", "slug": "2-twists-ufr" }]
+  },
+  {
+    "name": "Flips",
+    "display_scramble": "R' F R U' M' U2 M U' S R' F' R S'",
+    "sets": [{ "name": "2-Flips UF", "slug": "2-flips-uf" }]
+  }
+]

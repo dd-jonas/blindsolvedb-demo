@@ -1,0 +1,20 @@
+{
+  "name": "2-Flips UF",
+  "slug": "2-flips-uf",
+  "buffers": "UF",
+  "headers": "[UB]|[UR]|[UL]|[FL]|[FR]|[BR]|[BL]|[DF]|[DR]|[DB]|[DL]",
+  "size": 11,
+  "cases": [
+    { "id": 854, "name": "[UF] [UB]", "slug": "(UF)_(UB)", "sort": 1 },
+    { "id": 855, "name": "[UF] [UR]", "slug": "(UF)_(UR)", "sort": 2 },
+    { "id": 856, "name": "[UF] [UL]", "slug": "(UF)_(UL)", "sort": 3 },
+    { "id": 857, "name": "[UF] [FL]", "slug": "(UF)_(FL)", "sort": 4 },
+    { "id": 858, "name": "[UF] [FR]", "slug": "(UF)_(FR)", "sort": 5 },
+    { "id": 859, "name": "[UF] [BR]", "slug": "(UF)_(BR)", "sort": 6 },
+    { "id": 860, "name": "[UF] [BL]", "slug": "(UF)_(BL)", "sort": 7 },
+    { "id": 861, "name": "[UF] [DF]", "slug": "(UF)_(DF)", "sort": 8 },
+    { "id": 862, "name": "[UF] [DR]", "slug": "(UF)_(DR)", "sort": 9 },
+    { "id": 863, "name": "[UF] [DB]", "slug": "(UF)_(DB)", "sort": 10 },
+    { "id": 864, "name": "[UF] [DL]", "slug": "(UF)_(DL)", "sort": 11 }
+  ]
+}

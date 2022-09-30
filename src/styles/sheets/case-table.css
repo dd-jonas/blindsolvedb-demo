@@ -1,0 +1,97 @@
+.case-table tbody:not(:last-of-type)::after {
+  content: '';
+}
+
+.case-table td {
+  padding: var(--size-2) var(--size-4);
+}
+
+.case-table__algorithm {
+  cursor: pointer;
+}
+
+.case-table__algorithm div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--size-2);
+}
+
+.case-table__algorithm div svg {
+  --size: var(--size-6);
+  min-width: var(--size);
+  min-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  display: none;
+  color: var(--color-grey-400);
+  transition: var(--transition-speed-fast);
+}
+
+.case-table__algorithm:hover svg {
+  display: block;
+}
+
+.case-table__algorithm:active svg {
+  color: var(--color-grey-500);
+}
+
+.case-table td:not(:nth-child(1)) {
+  width: 0;
+  padding-left: var(--size-1);
+  padding-right: var(--size-1);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.case-table__switch {
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.case-table__switch {
+  width: var(--size-6);
+  height: var(--size-6);
+  color: var(--color-grey-300);
+}
+
+.case-table__switch:hover {
+  color: var(--color-grey-400);
+}
+
+.case-table__switch:active {
+  color: var(--color-grey-500);
+}
+
+.case-table__switch--selected {
+  color: var(--color-accent);
+}
+
+.case-table__switch--selected:hover {
+  color: var(--color-accent-600);
+}
+
+.case-table__switch--selected:active {
+  color: var(--color-accent-700);
+}
+
+td.case-table__action {
+  padding: var(--size-1);
+}
+
+.case-table__action .button {
+  display: inline-block;
+  margin: 0 auto;
+  padding: var(--size-1) var(--size-2);
+}
+
+@media screen and (max-width: 768px) {
+  .case-table th,
+  .case-table td {
+    padding: var(--size-1) var(--size-2);
+  }
+
+  .case-table td:first-child:hover svg {
+    display: none;
+  }
+}

@@ -1,0 +1,14 @@
+.home-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--size-4);
+}
+
+@media screen and (max-width: 768px) {
+  .home-card {
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: var(--line-height-sm);
+  }
+}

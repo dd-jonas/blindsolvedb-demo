@@ -1,0 +1,28 @@
+dt {
+  font-weight: var(--font-weight-semibold);
+}
+
+dt:not(:first-of-type) {
+  margin-top: var(--size-2);
+}
+
+dd {
+  margin-left: var(--size-2);
+}
+
+kbd {
+  padding: 2px var(--size-1);
+  border: var(--size-px) solid var(--color-grey-300);
+  border-radius: var(--size-px);
+  box-shadow: var(--elevation-1);
+  background-color: var(--color-grey-200);
+  font-family: var(--font-family-karla);
+  font-size: var(--font-scale-0);
+  cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+  kbd {
+    padding: 1px var(--size-1);
+  }
+}

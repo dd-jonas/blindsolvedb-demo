@@ -1,0 +1,48 @@
+.dialog__overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 74, 97, 0.35);
+  z-index: var(--layer-top);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog__content {
+  min-width: var(--width-sm);
+  max-width: var(--width-md);
+  padding: var(--size-6);
+  box-shadow: var(--elevation-5);
+  background-color: var(--color-grey-100);
+}
+
+.dialog__title,
+.dialog__message {
+  margin-bottom: var(--size-5);
+}
+
+.dialog__message {
+  color: var(--color-grey-700);
+}
+
+.dialog__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: var(--size-3);
+}
+
+@media screen and (max-width: 1200px) {
+  .dialog__content {
+    max-width: var(--width-xs);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dialog__content {
+    min-width: 100%;
+  }
+}

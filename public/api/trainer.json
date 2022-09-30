@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Corners UFR",
+    "slug": "corners-ufr",
+    "size": 378,
+    "used": 378,
+    "results": 0,
+    "learned": 0,
+    "review": 0
+  },
+  {
+    "name": "2-Twists UFR",
+    "slug": "2-twists-ufr",
+    "size": 14,
+    "used": 14,
+    "results": 0,
+    "learned": 0,
+    "review": 0
+  },
+  {
+    "name": "2-Flips UF",
+    "slug": "2-flips-uf",
+    "size": 11,
+    "used": 11,
+    "results": 11,
+    "learned": 11,
+    "review": 11
+  }
+]

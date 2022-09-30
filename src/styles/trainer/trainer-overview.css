@@ -1,0 +1,59 @@
+.trainer-overview {
+  --min-width: var(--width-xs);
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--min-width), 1fr));
+  gap: var(--size-8);
+}
+
+.trainer-overview-card__name {
+  margin-bottom: var(--size-4);
+}
+
+.trainer-overview-card__name a:hover {
+  color: var(--color-accent);
+  transition: var(--transition-speed-fast);
+}
+
+.trainer-overview-card__name svg {
+  --size: var(--size-8);
+  width: var(--size);
+  height: var(--size);
+  display: inline-block;
+  margin-left: var(--size-1);
+  vertical-align: top;
+}
+
+.trainer-overview-card__content {
+  display: flex;
+  gap: var(--size-8);
+  align-items: flex-end;
+}
+
+.trainer-overview-card__progress {
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .trainer-overview {
+    --min-width: 300px;
+    gap: var(--size-4);
+  }
+
+  .trainer-overview-card__name {
+    margin-bottom: var(--size-3);
+    font-size: var(--font-scale-3);
+  }
+
+  .trainer-overview-card__name svg {
+    --size: var(--size-7);
+  }
+
+  .trainer-overview-card__content {
+    gap: var(--size-5);
+  }
+
+  .trainer-overview-card__action {
+    padding: var(--size-1) var(--size-3);
+  }
+}

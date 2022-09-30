@@ -1,0 +1,82 @@
+.case-actions__toggles {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.case-action {
+  max-width: 50%;
+}
+
+.case-action > *:not(:last-child) {
+  margin-bottom: var(--size-2); /* Necessary? */
+}
+
+.case-action--report {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .case-action {
+    max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .case-action {
+    max-width: 100%;
+  }
+}
+
+/* Add algorithm */
+.add-algorithm__error {
+  color: var(--color-danger-700);
+  background-color: var(--color-danger-100);
+}
+
+.add-algorithm__cubes {
+  display: flex;
+  justify-content: center;
+  column-gap: var(--size-4);
+}
+
+.add-algorithm__cubes--waiting {
+  opacity: 0.75;
+}
+
+.add-algorithm__form {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  row-gap: var(--size-2);
+  column-gap: var(--size-4);
+  align-items: end;
+}
+
+@media screen and (max-width: 768px) {
+  .add-algorithm__form {
+    grid-template-columns: 1fr auto;
+  }
+
+  .add-algorithm__form .input {
+    grid-column: 1 / -1;
+  }
+
+  .add-algorithm button:first-of-type {
+    justify-self: end;
+  }
+}
+
+/* Report algorithm */
+.report-algorithm > *:not(:last-child) {
+  margin-bottom: var(--size-4);
+}
+
+.report-algorithm textarea {
+  resize: none;
+}
+
+.report-algorithm__buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--size-4);
+}

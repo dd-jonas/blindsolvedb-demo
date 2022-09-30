@@ -1,0 +1,198 @@
+.cube-perspective {
+  --size: var(--size-40);
+  --perspective: 600px;
+
+  --rotation-front: rotateX(-25deg) rotateY(-45deg);
+  --rotation-back: rotateX(25deg) rotateY(135deg);
+
+  --sharp: 3%;
+  --rounded: 15%;
+}
+
+.cube-perspective--big {
+  --size: var(--size-64);
+}
+
+.cube-perspective {
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: var(--perspective);
+  overflow: hidden;
+  user-select: none;
+}
+
+.cube {
+  width: 50%;
+  height: 50%;
+  transform-style: preserve-3d;
+  transform: var(--rotation-front);
+}
+
+.cube--opposite {
+  transform: var(--rotation-back);
+}
+
+.cube__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.cube__face--U {
+  transform: translateY(-50%) rotateX(90deg);
+}
+
+.cube__face--D {
+  transform: translateY(50%) rotateX(-90deg);
+}
+
+.cube__face--F {
+  transform: rotateY(90deg) translateX(-50%) rotateY(-90deg);
+}
+
+.cube__face--B {
+  transform: rotateY(90deg) translateX(50%) rotateY(90deg);
+}
+
+.cube__face--L {
+  transform: translateX(-50%) rotateY(-90deg);
+}
+
+.cube__face--R {
+  transform: translateX(50%) rotateY(90deg);
+}
+
+.cube__sticker {
+  width: 100%;
+  height: 100%;
+  border: var(--size-px) solid rgba(0, 0, 0, 0.15);
+}
+
+.cube__sticker:nth-child(1) {
+  border-radius: var(--sharp) var(--sharp) var(--rounded) var(--sharp);
+}
+
+.cube__sticker:nth-child(2) {
+  border-radius: var(--sharp) var(--sharp) var(--rounded) var(--rounded);
+}
+
+.cube__sticker:nth-child(3) {
+  border-radius: var(--sharp) var(--sharp) var(--sharp) var(--rounded);
+}
+
+.cube__sticker:nth-child(4) {
+  border-radius: var(--sharp) var(--rounded) var(--rounded) var(--sharp);
+}
+
+.cube__sticker:nth-child(5) {
+  border-radius: var(--rounded);
+}
+
+.cube__sticker:nth-child(6) {
+  border-radius: var(--rounded) var(--sharp) var(--sharp) var(--rounded);
+}
+
+.cube__sticker:nth-child(7) {
+  border-radius: var(--sharp) var(--rounded) var(--sharp) var(--sharp);
+}
+
+.cube__sticker:nth-child(8) {
+  border-radius: var(--rounded) var(--rounded) var(--sharp) var(--sharp);
+}
+
+.cube__sticker:nth-child(9) {
+  border-radius: var(--rounded) var(--sharp) var(--sharp) var(--sharp);
+}
+
+.cube__sticker--blank {
+  background-color: var(--color-grey-300);
+}
+
+.cube__sticker--white {
+  background-color: var(--color-cube-white);
+}
+
+.cube__sticker--green-1 {
+  background-color: var(--color-cube-green-1);
+}
+
+.cube__sticker--green-2 {
+  background-color: var(--color-cube-green-2);
+}
+
+.cube__sticker--blue-1 {
+  background-color: var(--color-cube-blue-1);
+}
+
+.cube__sticker--blue-2 {
+  background-color: var(--color-cube-blue-2);
+}
+
+.cube__sticker--yellow-1 {
+  background-color: var(--color-cube-yellow-1);
+}
+
+.cube__sticker--yellow-2 {
+  background-color: var(--color-cube-yellow-2);
+}
+
+.cube__sticker--orange-1 {
+  background-color: var(--color-cube-orange-1);
+}
+
+.cube__sticker--orange-2 {
+  background-color: var(--color-cube-orange-2);
+}
+
+.cube__sticker--red-1 {
+  background-color: var(--color-cube-red-1);
+}
+
+.cube__sticker--red-2 {
+  background-color: var(--color-cube-red-2);
+}
+
+.cube__sticker--pink {
+  background-color: var(--color-cube-pink);
+}
+
+.cube__sticker--purple {
+  background-color: var(--color-cube-purple);
+}
+
+.cube__sticker--brown {
+  background-color: var(--color-cube-brown);
+}
+
+.cube__sticker--black {
+  background-color: var(--color-cube-black);
+}
+
+@media screen and (max-width: 1200px) {
+  .cube-perspective {
+    --size: var(--size-36);
+  }
+
+  .cube-perspective--big {
+    --size: var(--size-48);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cube-perspective {
+    --size: var(--size-28);
+  }
+
+  .cube-perspective--big {
+    --size: var(--size-32);
+  }
+}

@@ -1,0 +1,39 @@
+body {
+  color: var(--color-black);
+  background-color: var(--color-grey-100);
+  font-family: var(--font-family-karla);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-md);
+}
+
+#root > div {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  --page-padding: var(--size-8);
+  flex-grow: 1;
+  display: grid;
+  align-items: start;
+  grid-template-columns:
+    minmax(var(--grid-page-gutter), 1fr)
+    minmax(0, var(--grid-page-width))
+    minmax(var(--grid-page-gutter), 1fr);
+  padding: var(--page-padding) 0;
+}
+
+main > * {
+  grid-column: var(--grid-page-main);
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    --page-padding: var(--size-6);
+  }
+}
+
+::selection {
+  color: var(--color-white);
+  background-color: var(--color-primary-700);
+}

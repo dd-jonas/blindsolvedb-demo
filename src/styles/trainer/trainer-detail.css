@@ -1,0 +1,84 @@
+.trainer-detail {
+  display: grid;
+  gap: var(--size-6);
+}
+
+.trainer-detail__bar {
+  margin-bottom: var(--size-4);
+  display: flex;
+  align-items: flex-end;
+  gap: var(--size-8);
+}
+
+.trainer-detail__bar > :first-child {
+  flex-grow: 1;
+}
+
+.trainer-detail__actions {
+  position: relative;
+  display: flex;
+  gap: var(--size-4);
+}
+
+.trainer-detail__more-actions {
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+  transform: translateY(100%);
+  padding: var(--size-2);
+  border: var(--size-px) solid var(--color-grey-200);
+  border-radius: var(--size-px);
+  box-shadow: var(--elevation-3);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  z-index: var(--layer-1);
+}
+
+.trainer-detail__more-actions * {
+  text-align: left;
+}
+
+.trainer-detail__table {
+  width: 66%;
+}
+
+.trainer-detail__table td:not(:nth-child(2)) {
+  width: 0; /* Expand second column hack */
+}
+
+.trainer-detail__table--not-used td {
+  color: var(--color-grey-500);
+  background-color: var(--color-grey-100);
+}
+
+.trainer-detail__table a {
+  color: var(--color-primary-800);
+}
+
+.trainer-detail__table a:hover {
+  color: var(--color-accent);
+  transition: var(--transition-speed-fast);
+}
+
+@media screen and (max-width: 1200px) {
+  .trainer-detail__bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--size-4);
+  }
+
+  .trainer-detail__actions {
+    align-self: flex-end;
+  }
+
+  .trainer-detail__table {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .trainer-detail__actions {
+    gap: var(--size-3);
+  }
+}
