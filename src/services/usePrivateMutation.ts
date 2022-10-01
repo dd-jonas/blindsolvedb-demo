@@ -8,6 +8,12 @@ export const usePrivateMutation = <TData, TVariables>(
 ) => {
   return useMutation(async () => {
     // -- Demo code
+    console.log(path);
+    if (method === 'put' && /^\/trainer\/[^/]+$/.test(path)) {
+      // Don't show toasts for clicking trainer results
+      return null as TData;
+    }
+
     toast.warn('Mutations not supported in this demo.', {
       toastId: 'demo-mutation',
     });
