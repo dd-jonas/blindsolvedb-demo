@@ -4,27 +4,46 @@
     "display_scramble": "D2 R U R D' R' U' R D R2 D2",
     "sets": [
       { "name": "Corners UFR", "slug": "corners-ufr" },
-      { "name": "Corners UBL", "slug": "corners-ubl" }
+      { "name": "Corners UBL", "slug": "corners-ubl", "disabled": true },
+      { "name": "Corners UBR", "slug": "corners-ubr", "disabled": true }
     ]
   },
   {
     "name": "Edges",
     "display_scramble": "R' F R' S R2 S' R' F' R",
-    "sets": [{ "name": "Edges UF", "slug": "edges-uf" }]
+    "sets": [
+      { "name": "Edges UF", "slug": "edges-uf" },
+      { "name": "Edges UB", "slug": "edges-ub", "disabled": true },
+      { "name": "Edges DF", "slug": "edges-df", "disabled": true }
+    ]
   },
   {
     "name": "Parity",
     "display_scramble": "U' F' L F2 U' F' U' F U F' L' F U F'",
-    "sets": [{ "name": "Parity UF-UR UFR", "slug": "parity-uf-ur-ufr" }]
+    "sets": [
+      { "name": "Parity UF-UR UFR", "slug": "parity-uf-ur-ufr" },
+      {
+        "name": "Parity UB-UL UBL",
+        "slug": "parity-ub-ul-ubl",
+        "disabled": true
+      }
+    ]
   },
   {
     "name": "Twists",
     "display_scramble": "R' D R D' R' D R U' R' D' R D R' D' R U",
-    "sets": [{ "name": "2-Twists UFR", "slug": "2-twists-ufr" }]
+    "sets": [
+      { "name": "2-Twists UFR", "slug": "2-twists-ufr" },
+      { "name": "2-Twists UBL", "slug": "2-twists-ubl", "disabled": true }
+    ]
   },
   {
     "name": "Flips",
     "display_scramble": "R' F R U' M' U2 M U' S R' F' R S'",
-    "sets": [{ "name": "2-Flips UF", "slug": "2-flips-uf" }]
+    "sets": [
+      { "name": "2-Flips UF", "slug": "2-flips-uf" },
+      { "name": "2-Flips UB", "slug": "2-flips-ub", "disabled": true },
+      { "name": "2-Flips DF", "slug": "2-flips-df", "disabled": true }
+    ]
   }
 ]

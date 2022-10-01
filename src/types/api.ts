@@ -6,7 +6,7 @@ import { Flashcard } from './trainer';
 export type Category = {
   name: string;
   display_scramble: string;
-  sets: { name: string; slug: string }[];
+  sets: { name: string; slug: string; disabled?: boolean }[];
 };
 
 export type Set = {

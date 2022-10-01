@@ -28,6 +28,7 @@ export const CategoryCard = ({ category }: CategoryCardProps) => {
             key={set.slug}
             to={{ pathname: set.slug, search: fromUser ? 'tab=user' : '' }}
             className="category-card__set"
+            disabled={set.disabled}
           >
             {set.name}
           </LinkButton>

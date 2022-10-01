@@ -1,6 +1,7 @@
 import clsx from 'clsx';
-import { ReactNode } from 'react';
+import { MouseEvent, ReactNode } from 'react';
 import { Link, To } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 type LinkButtonProps = {
   to: To;
@@ -20,6 +21,7 @@ export const LinkButton = ({
   children,
   variant = 'primary',
   danger = false,
+  disabled = false,
   small = false,
   icon = null,
   className = '',
@@ -34,8 +36,24 @@ export const LinkButton = ({
     className
   );
 
+  // -- Demo code
+  const preventNavigation = (e: MouseEvent<HTMLAnchorElement>) => {
+    toast.dismiss();
+
+    if (disabled) {
+      e.preventDefault();
+      toast.warn(`The set "${children}" is not available in the demo version.`);
+    }
+  };
+  // -- End demo code
+
   return (
-    <Link to={to} replace={replace} className={classes}>
+    <Link
+      to={to}
+      replace={replace}
+      className={classes}
+      onClick={preventNavigation}
+    >
       {icon}
       {icon && children ? <span>{children}</span> : children}
     </Link>
