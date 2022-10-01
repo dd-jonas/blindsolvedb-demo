@@ -12,14 +12,20 @@ export const Reports = () => {
   const reports = query.data;
 
   return (
-    <div className="reports">
-      {reports.length === 0 ? (
-        <Message>No reports left to handle!</Message>
-      ) : (
-        reports.map((report) => (
-          <ReportAccordion key={report.id} report={report} />
-        ))
-      )}
-    </div>
+    <>
+      <Alert warning>
+        On this demo site, the current user has admin privileges.
+      </Alert>
+
+      <div className="reports">
+        {reports.length === 0 ? (
+          <Message>No reports left to handle!</Message>
+        ) : (
+          reports.map((report) => (
+            <ReportAccordion key={report.id} report={report} />
+          ))
+        )}
+      </div>
+    </>
   );
 };
