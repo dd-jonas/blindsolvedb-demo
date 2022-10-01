@@ -1,0 +1,30 @@
+{
+  "name": "2-Twists UFR",
+  "buffers": "FUR|RUF",
+  "pool": [
+    {
+      "id": 840,
+      "prompt": "[FUR] [LUB]",
+      "solution": "[R' D R D' R' D R, U2]",
+      "new": true
+    },
+    {
+      "id": 841,
+      "prompt": "[RUF] [BUL]",
+      "solution": "[U2, R' D R D' R' D R]",
+      "new": true
+    },
+    {
+      "id": 842,
+      "prompt": "[FUR] [BUR]",
+      "solution": "[R' D R D' R' D R, U]",
+      "new": true
+    },
+    {
+      "id": 843,
+      "prompt": "[RUF] [RUB]",
+      "solution": "[U, R' D R D' R' D R]",
+      "new": true
+    }
+  ]
+}

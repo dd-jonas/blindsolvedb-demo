@@ -1,0 +1,97 @@
+{
+  "name": "2-Twists UFR",
+  "slug": "2-twists-ufr",
+  "buffers": "FUR|RUF",
+  "size": 14,
+  "used": 14,
+  "results": 0,
+  "learned": 0,
+  "review": 0,
+  "subsets": null,
+  "cases": [
+    {
+      "name": "[FUR] [LUB]",
+      "slug": "(FUR)_(LUB)",
+      "algorithm": "[R' D R D' R' D R, U2]",
+      "average": null
+    },
+    {
+      "name": "[RUF] [BUL]",
+      "slug": "(RUF)_(BUL)",
+      "algorithm": "[U2, R' D R D' R' D R]",
+      "average": null
+    },
+    {
+      "name": "[FUR] [BUR]",
+      "slug": "(FUR)_(BUR)",
+      "algorithm": "[R' D R D' R' D R, U]",
+      "average": null
+    },
+    {
+      "name": "[RUF] [RUB]",
+      "slug": "(RUF)_(RUB)",
+      "algorithm": "[U, R' D R D' R' D R]",
+      "average": null
+    },
+    {
+      "name": "[FUR] [FUL]",
+      "slug": "(FUR)_(FUL)",
+      "algorithm": "[R' D R D' R' D R, U']",
+      "average": null
+    },
+    {
+      "name": "[RUF] [LUF]",
+      "slug": "(RUF)_(LUF)",
+      "algorithm": "[U', R' D R D' R' D R]",
+      "average": null
+    },
+    {
+      "name": "[FUR] [LDF]",
+      "slug": "(FUR)_(LDF)",
+      "algorithm": "U R' U' R U R' D R U' R' U R U' R' D' R",
+      "average": null
+    },
+    {
+      "name": "[RUF] [FDL]",
+      "slug": "(RUF)_(FDL)",
+      "algorithm": "R' D R U R' U' R U R' D' R U' R' U R U'",
+      "average": null
+    },
+    {
+      "name": "[FUR] [FDR]",
+      "slug": "(FUR)_(FDR)",
+      "algorithm": "U R' U' R U R' D' R U' R' U R U' R' D R",
+      "average": null
+    },
+    {
+      "name": "[RUF] [RDF]",
+      "slug": "(RUF)_(RDF)",
+      "algorithm": "R' D' R U R' U' R U R' D R U' R' U R U'",
+      "average": null
+    },
+    {
+      "name": "[FUR] [RDB]",
+      "slug": "(FUR)_(RDB)",
+      "algorithm": "R U R' D' R U' R' U R U' R' D R U R' U'",
+      "average": null
+    },
+    {
+      "name": "[RUF] [BDR]",
+      "slug": "(RUF)_(BDR)",
+      "algorithm": "U R U' R' D' R U R' U' R U R' D R U' R'",
+      "average": null
+    },
+    {
+      "name": "[FUR] [BDL]",
+      "slug": "(FUR)_(BDL)",
+      "algorithm": "R U' R' U R D' R' U' R U R' U' R D R' U",
+      "average": null
+    },
+    {
+      "name": "[RUF] [LDB]",
+      "slug": "(RUF)_(LDB)",
+      "algorithm": "U' R D' R' U R U' R' U R D R' U' R U R'",
+      "average": null
+    }
+  ]
+}
