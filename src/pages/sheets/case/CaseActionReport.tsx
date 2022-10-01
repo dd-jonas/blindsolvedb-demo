@@ -39,7 +39,6 @@ export const CaseActionReport = ({
 
     mutation.mutate(values, {
       onSuccess: () => {
-        toast.success('Algorithm reported');
         close();
       },
       onError: () => {

@@ -21,9 +21,6 @@ export const CaseTableColumnAdmin = ({
     if (mutation.isLoading) return;
 
     mutation.mutate(null, {
-      onSuccess: () => {
-        toast.success('Shape deleted');
-      },
       onError: () => {
         toast.error('Failed to delete shape');
       },

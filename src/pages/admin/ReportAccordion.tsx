@@ -20,9 +20,6 @@ export const ReportAccordion = ({ report }: ReportProps) => {
     if (mutation.isLoading) return;
 
     mutation.mutate(null, {
-      onSuccess: () => {
-        toast.success('Report deleted');
-      },
       onError: () => {
         toast.error('Failed to delete report');
       },
