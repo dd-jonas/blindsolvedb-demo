@@ -17,17 +17,17 @@
     },
     {
       "id": 870,
-      "users": 1,
-      "shapes": [{ "id": 872, "text": "[R' B' R: [R D R', U']]", "users": 1 }]
+      "users": 5,
+      "shapes": [{ "id": 872, "text": "[R' B' R: [R D R', U']]", "users": 5 }]
     },
     {
       "id": 876,
-      "users": 0,
+      "users": 3,
       "shapes": [
         {
           "id": 881,
           "text": "U' r U r' U' r' F r2 U' r' U' r U r' F' U2",
-          "users": 0
+          "users": 3
         }
       ]
     }

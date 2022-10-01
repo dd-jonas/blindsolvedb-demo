@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "algorithm_id": 1,
+  "text": "[x R': [U, R' D2 R]]",
+  "base": "R' F R' B2 R F' R' B2 R2",
+  "users": 3,
+  "created_by": "BlindsolveDB",
+  "created_at": "2022-03-28T17:38:21.099Z"
+}
