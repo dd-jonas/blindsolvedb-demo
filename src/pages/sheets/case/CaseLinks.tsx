@@ -42,7 +42,7 @@ export const CaseLinks = ({ set, casus }: CaseLinksProps) => {
         {casus.inverse_name && (
           <Link to={`/sheets/${set.slug}/${casus.inverse_slug}`}>
             <SwitchHorizontalIcon />
-            {ls(casus.inverse_name, set.buffers)}
+            {ls(casus.inverse_name, 'UFR')}
           </Link>
         )}
       </div>
