@@ -1,0 +1,85 @@
+.explorer {
+  margin-top: var(--size-6);
+  display: grid;
+  grid-template-areas:
+    'cubes cubes'
+    'input output';
+  grid-template-columns: 3fr 2fr;
+  align-items: start;
+  gap: var(--size-4);
+}
+
+.explorer__cubes {
+  grid-area: cubes;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-8);
+}
+
+.explorer__cubes > :first-child {
+  width: 20rem;
+  height: 20rem;
+}
+
+.explorer__input {
+  grid-area: input;
+}
+
+.explorer__input > :first-child {
+  margin-bottom: var(--size-2);
+  display: flex;
+  gap: var(--size-2);
+}
+
+.explorer__input > :first-child > :first-child {
+  flex-grow: 1;
+}
+
+.explorer__turns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'face wide slice'
+    'face wide rotation';
+  row-gap: var(--size-1);
+  column-gap: var(--size-3);
+}
+
+.explorer__turns > :first-child {
+  grid-area: face;
+}
+
+.explorer__turns > :nth-child(2) {
+  grid-area: wide;
+}
+
+.explorer__turns > :nth-child(3) {
+  grid-area: slice;
+}
+
+.explorer__turns > :nth-child(4) {
+  grid-area: rotation;
+}
+
+.explorer__turngroup {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--size-1);
+}
+
+.explorer__output h5 {
+  grid-area: output;
+  margin-bottom: var(--size-3);
+}
+
+.explorer__output dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  row-gap: var(--size-2);
+  column-gap: var(--size-6);
+}
+
+.explorer__output dl * {
+  margin: 0;
+}

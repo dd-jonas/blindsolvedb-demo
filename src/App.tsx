@@ -10,6 +10,7 @@ import { SettingsProvider } from '#providers';
 const Home = lazy(() => import('#pages/home/Home'));
 const SheetsScene = lazy(() => import('#pages/sheets/SheetsScene'));
 const TrainerScene = lazy(() => import('#pages/trainer/TrainerScene'));
+const ExplorerScene = lazy(() => import('#pages/explorer/ExplorerScene'));
 const ProfileScene = lazy(() => import('#pages/profile/ProfileScene'));
 const AdminScene = lazy(() => import('#pages/admin/AdminScene'));
 
@@ -40,6 +41,7 @@ const App = () => {
               <Route path="/" element={<Home />} />
               <Route path="/sheets/*" element={<SheetsScene />} />
               <Route path="/trainer/*" element={<TrainerScene />} />
+              <Route path="/explorer/*" element={<ExplorerScene />} />
               <Route path="/profile/*" element={<ProfileScene />} />
               <Route path="/admin/*" element={<AdminScene />} />
               <Route path="*" element={<NoMatch />} />

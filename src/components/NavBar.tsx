@@ -41,6 +41,7 @@ export const NavBar = () => {
       >
         <Link to="/sheets">Sheets</Link>
         <Link to="/trainer">Trainer</Link>
+        <Link to="/explorer">Explorer</Link>
 
         <div className="nav__separator" aria-hidden></div>
 
