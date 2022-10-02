@@ -1,9 +1,8 @@
 import '#styles/trainer/index.css';
 
-import { useAuth0 } from '@auth0/auth0-react';
 import { Route, Routes } from 'react-router-dom';
 
-import { ErrorBoundary, LoginMessage } from '#components';
+import { ErrorBoundary } from '#components';
 import { useDocumentTitle } from '#hooks';
 import { NoMatch } from '#pages/NoMatch';
 
@@ -14,12 +13,6 @@ import { ReviewSession } from './session/ReviewSession';
 
 const TrainerScene = () => {
   useDocumentTitle('Trainer');
-
-  const { isAuthenticated } = useAuth0();
-
-  if (!isAuthenticated) {
-    return <LoginMessage>Log in to use the trainer.</LoginMessage>;
-  }
 
   return (
     <ErrorBoundary>

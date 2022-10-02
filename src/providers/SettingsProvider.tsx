@@ -1,4 +1,3 @@
-import { useAuth0 } from '@auth0/auth0-react';
 import { createContext, ReactNode, useContext } from 'react';
 
 import { Alert, Spinner } from '#components';
@@ -6,13 +5,11 @@ import { useSettings as useSettingsQuery } from '#services/profile';
 import { Settings } from '#types/api';
 import { CubeLocation } from '#types/cube';
 
-const SettingsContext = createContext<
-  (Settings & { ls: (target: string, buffers?: string) => string }) | null
->(null);
+type LS = (target: string, buffers?: string) => string;
+const SettingsContext = createContext<(Settings & { ls: LS }) | null>(null);
 
 export const SettingsProvider = ({ children }: { children: ReactNode }) => {
-  const { isAuthenticated } = useAuth0();
-  const query = useSettingsQuery({ enabled: isAuthenticated });
+  const query = useSettingsQuery({ enabled: true });
 
   if (query.isLoading || query.isIdle) return <Spinner />;
   if (query.isError) return <Alert danger>{query.error.message}</Alert>;

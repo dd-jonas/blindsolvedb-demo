@@ -1,17 +1,12 @@
-import { useAuth0 } from '@auth0/auth0-react';
 import { MenuIcon } from '@heroicons/react/solid';
 import clsx from 'clsx';
 import { ReactNode, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import { Button, LoginButton } from '#components';
-import { Roles, rolesKey } from '#config/roles';
+import { Button } from '#components';
 
 export const NavBar = () => {
-  const { isAuthenticated, user } = useAuth0();
   const [isCollapsed, setIsCollapsed] = useState(true);
-
-  const isAdmin: boolean = user?.[rolesKey]?.includes(Roles.admin);
 
   const Link = ({ to, children }: { to: string; children: ReactNode }) => (
     <NavLink to={to} onClick={() => setIsCollapsed(true)}>
@@ -49,8 +44,8 @@ export const NavBar = () => {
 
         <div className="nav__separator" aria-hidden></div>
 
-        {isAdmin && <Link to="/admin">Dashboard</Link>}
-        {isAuthenticated ? <Link to="/profile">Profile</Link> : <LoginButton />}
+        <Link to="/admin">Dashboard</Link>
+        <Link to="/profile">Profile</Link>
       </div>
     </nav>
   );

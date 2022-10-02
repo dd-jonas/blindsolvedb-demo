@@ -1,18 +1,7 @@
-import { Route, Routes } from 'react-router-dom';
-
-import { NoMatch } from '#pages/NoMatch';
-
-import { LoginCallback } from './LoginCallback';
-import { LogoutCallback } from './LogoutCallback';
+import { Navigate } from 'react-router-dom';
 
 const AuthScene = () => {
-  return (
-    <Routes>
-      <Route path="/login" element={<LoginCallback />} />
-      <Route path="/logout" element={<LogoutCallback />} />
-      <Route path="*" element={<NoMatch />} />
-    </Routes>
-  );
+  return <Navigate to="/" />;
 };
 
 export default AuthScene;

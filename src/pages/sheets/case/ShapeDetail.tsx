@@ -1,12 +1,9 @@
-import { useAuth0 } from '@auth0/auth0-react';
-
 import { Alert, Spinner } from '#components';
 import { useShape } from '#services/admin';
 
 type ShapeDetailProps = { shapeId: number };
 
 export const ShapeDetail = ({ shapeId }: ShapeDetailProps) => {
-  const { user } = useAuth0();
   const query = useShape(shapeId);
 
   if (query.isLoading || query.isIdle) return <Spinner />;
@@ -29,7 +26,7 @@ export const ShapeDetail = ({ shapeId }: ShapeDetailProps) => {
       <dt>Created by</dt>
       <dd>
         {shape.created_by}
-        {shape.created_by === user?.sub && ' (you)'}
+        {shape.created_by === 'demo|62224e95b52c125066d0bd9d' && ' (you)'}
       </dd>
       <dt>Created at</dt>
       <dd>{new Date(shape.created_at).toLocaleString()}</dd>

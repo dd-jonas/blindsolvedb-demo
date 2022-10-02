@@ -1,4 +1,3 @@
-import { useAuth0 } from '@auth0/auth0-react';
 import { lazy, Suspense } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Slide, ToastContainer } from 'react-toastify';
@@ -16,10 +15,9 @@ const ProfileScene = lazy(() => import('#pages/profile/ProfileScene'));
 const AdminScene = lazy(() => import('#pages/admin/AdminScene'));
 
 const App = () => {
-  const { isLoading } = useAuth0();
   const { isChecking, isSupported } = useSupportedFeatures();
 
-  if (isLoading || isChecking) return <Spinner />;
+  if (isChecking) return <Spinner />;
 
   if (!isSupported) {
     return (

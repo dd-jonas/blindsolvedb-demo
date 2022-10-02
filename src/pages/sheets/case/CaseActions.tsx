@@ -1,9 +1,7 @@
-import { useAuth0 } from '@auth0/auth0-react';
 import { PlusIcon, ShieldExclamationIcon } from '@heroicons/react/outline';
 import { useState } from 'react';
 
 import { Button } from '#components';
-import { Roles, rolesKey } from '#config/roles';
 import { Case } from '#types/api';
 
 import { CaseActionAdd } from './CaseActionAdd';
@@ -15,12 +13,6 @@ type CaseActionsProps = {
 
 export const CaseActions = ({ casus }: CaseActionsProps) => {
   const [open, setOpen] = useState<'none' | 'add' | 'report'>('none');
-
-  const { user } = useAuth0();
-
-  const roles: string[] | undefined = user?.[rolesKey];
-
-  if (!roles?.includes(Roles.user)) return null;
 
   return (
     <div className="case-actions">

@@ -14,7 +14,8 @@ export const Reports = () => {
   return (
     <>
       <Alert warning>
-        On this demo site, the current user has admin privileges.
+        This dashboard is for admins only. On this demo site, the current user
+        is assumed to have has admin privileges.
       </Alert>
 
       <div className="reports">

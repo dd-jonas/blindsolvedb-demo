@@ -1,7 +1,6 @@
 import '#styles/profile/index.css';
 
-import { useAuth0 } from '@auth0/auth0-react';
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import { ErrorBoundary } from '#components';
 import { useDocumentTitle } from '#hooks';
@@ -11,12 +10,6 @@ import { Profile } from './Profile';
 
 const ProfileScene = () => {
   useDocumentTitle('Profile');
-
-  const { isAuthenticated } = useAuth0();
-
-  if (!isAuthenticated) {
-    return <Navigate to="/" />;
-  }
 
   return (
     <ErrorBoundary>

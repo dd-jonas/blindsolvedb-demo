@@ -1,9 +1,7 @@
-import { useAuth0 } from '@auth0/auth0-react';
 import { DuplicateIcon } from '@heroicons/react/outline';
 import { MouseEvent, ReactText, useRef } from 'react';
 import { toast } from 'react-toastify';
 
-import { Roles, rolesKey } from '#config/roles';
 import { useSettings } from '#providers';
 import { Case } from '#types/api';
 import { copyToClipboard } from '#utils';
@@ -16,13 +14,10 @@ type CaseTableProps = {
 };
 
 export const CaseTable = ({ casus }: CaseTableProps) => {
-  const { user, isAuthenticated } = useAuth0();
   const { preferences } = useSettings();
   const toastId = useRef<ReactText | null>(null);
 
-  const roles: string[] | undefined = user?.[rolesKey];
-  const isAdmin = roles?.includes(Roles.admin);
-  const showActions = isAdmin && preferences.showCaseActions;
+  const showActions = preferences.showCaseActions;
 
   const copyAlgorithm = async (e: MouseEvent<HTMLTableCellElement>) => {
     if (toastId.current) toast.dismiss(toastId.current);
@@ -46,7 +41,7 @@ export const CaseTable = ({ casus }: CaseTableProps) => {
 
   const columns: string[] = [
     'Algorithm',
-    isAuthenticated && 'Use',
+    'Use',
     'Users',
     showActions && 'Actions',
   ].filter(Boolean) as string[];
@@ -73,9 +68,7 @@ export const CaseTable = ({ casus }: CaseTableProps) => {
                   </div>
                 </td>
 
-                {isAuthenticated && (
-                  <CaseTableColumnUser slug={casus.slug} shapeId={shape.id} />
-                )}
+                <CaseTableColumnUser slug={casus.slug} shapeId={shape.id} />
 
                 {i === 0 && (
                   <td rowSpan={algorithm.shapes.length}>{algorithm.users}</td>
