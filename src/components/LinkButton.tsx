@@ -36,7 +36,6 @@ export const LinkButton = ({
     className
   );
 
-  // -- Demo code
   const preventNavigation = (e: MouseEvent<HTMLAnchorElement>) => {
     toast.dismiss();
 
@@ -45,7 +44,6 @@ export const LinkButton = ({
       toast.warn(`The set "${children}" is not available in the demo version.`);
     }
   };
-  // -- End demo code
 
   return (
     <Link

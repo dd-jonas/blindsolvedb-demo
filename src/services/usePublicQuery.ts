@@ -7,9 +7,7 @@ export const usePublicQuery = <Result>(
   path: string,
   options?: UseQueryOptions<Result, Error, Result, QueryKey>
 ) => {
-  // -- Demo code
   path = path.replace(/(?<!^)\//g, '.');
-  // -- End demo code
 
   const url = `${import.meta.env.VITE_API_URL}${path}.json`;
   return useQuery(key, () => fetch(url), options);

@@ -7,7 +7,6 @@ export const usePrivateMutation = <TData, TVariables>(
   options?: UseMutationOptions<TData, Error, TVariables, unknown>
 ) => {
   return useMutation(async () => {
-    // -- Demo code
     console.log(path);
     if (method === 'put' && /^\/trainer\/[^/]+$/.test(path)) {
       // Don't show toasts for clicking trainer results
@@ -19,6 +18,5 @@ export const usePrivateMutation = <TData, TVariables>(
     });
 
     return null as TData;
-    // -- End demo code
   }, options);
 };

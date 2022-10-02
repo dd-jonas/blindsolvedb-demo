@@ -22,7 +22,6 @@ export const CaseLinks = ({ set, casus }: CaseLinksProps) => {
   const previousCase = set.cases[currentIndex - 1];
   const nextCase = set.cases[currentIndex + 1];
 
-  // -- Demo code
   const preventNavigation = (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
 
@@ -36,7 +35,6 @@ export const CaseLinks = ({ set, casus }: CaseLinksProps) => {
       )} are available in this demo.`
     );
   };
-  // -- End demo code
 
   return (
     <div className="case-links">
