@@ -15,7 +15,7 @@ export const Reports = () => {
     <>
       <Alert warning>
         This dashboard is for admins only. On this demo site, the current user
-        is assumed to have has admin privileges.
+        is assumed to have admin privileges.
       </Alert>
 
       <div className="reports">
