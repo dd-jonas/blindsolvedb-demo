@@ -83,3 +83,24 @@
 .explorer__output dl * {
   margin: 0;
 }
+
+@media screen and (max-width: 1920px) {
+  .explorer {
+    margin-top: var(--size-2);
+    row-gap: var(--size-2);
+  }
+
+  .explorer__cubes {
+    gap: var(--size-4);
+  }
+
+  .explorer__cubes > :first-child {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .explorer__cubes > :nth-child(2) {
+    width: 9rem;
+    height: 9rem;
+  }
+}

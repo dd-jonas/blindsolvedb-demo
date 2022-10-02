@@ -38,6 +38,12 @@
   }
 }
 
+@media screen and (max-width: 1920px) {
+  .home-footer {
+    padding: var(--size-5) var(--grid-page-gutter);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .home-footer {
     grid-template-columns: auto;
