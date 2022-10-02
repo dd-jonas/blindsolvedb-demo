@@ -8,7 +8,6 @@ import { NoMatch } from '#pages/NoMatch';
 import { SettingsProvider } from '#providers';
 
 const Home = lazy(() => import('#pages/home/Home'));
-const AuthScene = lazy(() => import('#pages/auth/AuthScene'));
 const SheetsScene = lazy(() => import('#pages/sheets/SheetsScene'));
 const TrainerScene = lazy(() => import('#pages/trainer/TrainerScene'));
 const ProfileScene = lazy(() => import('#pages/profile/ProfileScene'));
@@ -39,7 +38,6 @@ const App = () => {
           <Suspense fallback={<Spinner />}>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/auth0/*" element={<AuthScene />} />
               <Route path="/sheets/*" element={<SheetsScene />} />
               <Route path="/trainer/*" element={<TrainerScene />} />
               <Route path="/profile/*" element={<ProfileScene />} />

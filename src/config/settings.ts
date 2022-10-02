@@ -59,7 +59,7 @@ export const defaultColorScheme = {
 };
 
 export const defaultPreferences = {
-  useLetteringScheme: false,
+  useLetteringScheme: true,
   colorTableHeaders: true,
   showCaseActions: true,
 };

@@ -1,39 +1,25 @@
 import { useForm } from 'react-hook-form';
-import { UseMutationResult } from 'react-query';
-import { toast } from 'react-toastify';
 
 import { Button, Checkbox } from '#components';
-import { Body } from '#services/profile';
+import { useSettings } from '#providers';
 import { Settings } from '#types/api';
 
-type PreferencesFormProps = {
-  settings: Settings;
-  mutation: UseMutationResult<null, Error, Body>;
-};
-
 type FormData = {
-  preferences: { showCaseActions: boolean };
+  preferences: Pick<Settings['preferences'], 'showCaseActions'>;
 };
 
-export const PreferencesForm = ({
-  settings,
-  mutation,
-}: PreferencesFormProps) => {
+export const PreferencesForm = () => {
+  const { preferences, updateSettings } = useSettings();
+
   const { register, handleSubmit, formState, reset } = useForm<FormData>({
     defaultValues: {
-      preferences: { showCaseActions: settings.preferences.showCaseActions },
+      preferences: { showCaseActions: preferences.showCaseActions },
     },
   });
 
   const onSubmit = handleSubmit((data) => {
-    mutation.mutate(data, {
-      onSuccess: () => {
-        reset(data);
-      },
-      onError: () => {
-        toast.error('Failed to save preferences');
-      },
-    });
+    updateSettings(data);
+    reset(data);
   });
 
   return (
@@ -57,20 +43,15 @@ export const PreferencesForm = ({
           onClick={() =>
             reset({
               preferences: {
-                showCaseActions: settings.preferences.showCaseActions,
+                showCaseActions: preferences.showCaseActions,
               },
             })
           }
-          loading={mutation.isLoading}
           disabled={!formState.isDirty}
         >
           Cancel
         </Button>
-        <Button
-          type="submit"
-          loading={mutation.isLoading}
-          disabled={!formState.isDirty}
-        >
+        <Button type="submit" disabled={!formState.isDirty}>
           Save changes
         </Button>
       </div>

@@ -1,10 +1,8 @@
 import { useForm } from 'react-hook-form';
-import { UseMutationResult } from 'react-query';
-import { toast } from 'react-toastify';
 
 import { Button, Checkbox, Cube, Select } from '#components';
 import { colors } from '#config/cube';
-import { Body } from '#services/profile';
+import { useSettings } from '#providers';
 import { Settings } from '#types/api';
 import { Face } from '#types/cube';
 
@@ -13,20 +11,14 @@ const options = Object.entries(colors).map(([label, value]) => ({
   value,
 }));
 
-type ColorSchemeFormProps = {
-  settings: Settings;
-  mutation: UseMutationResult<null, Error, Body>;
-};
-
 type FormData = {
-  colorScheme: Settings['color_scheme'];
+  color_scheme: Settings['color_scheme'];
   preferences: { colorTableHeaders: boolean };
 };
 
-export const ColorSchemeForm = ({
-  settings,
-  mutation,
-}: ColorSchemeFormProps) => {
+export const ColorSchemeForm = () => {
+  const { preferences, color_scheme, updateSettings } = useSettings();
+
   const {
     register,
     handleSubmit,
@@ -37,58 +29,50 @@ export const ColorSchemeForm = ({
     setValue,
   } = useForm<FormData>({
     defaultValues: {
-      colorScheme: { ...settings.color_scheme },
-      preferences: {
-        colorTableHeaders: settings.preferences.colorTableHeaders,
-      },
+      color_scheme: { ...color_scheme },
+      preferences: { colorTableHeaders: preferences.colorTableHeaders },
     },
   });
 
   const onSubmit = handleSubmit((data) => {
-    mutation.mutate(data, {
-      onSuccess: () => {
-        reset(data);
-      },
-      onError: () => {
-        toast.error('Failed to save color scheme');
-      },
-    });
+    updateSettings(data);
+    reset(data);
   });
 
   const rotate = (axis: 'x' | 'y' | 'z') => () => {
     const {
-      colorScheme: { U, D, F, B, L, R },
+      color_scheme: { U, D, F, B, L, R },
     } = getValues();
 
     switch (axis) {
       case 'x':
-        setValue('colorScheme.U', F, { shouldDirty: true });
-        setValue('colorScheme.F', D, { shouldDirty: true });
-        setValue('colorScheme.D', B, { shouldDirty: true });
-        setValue('colorScheme.B', U, { shouldDirty: true });
+        setValue('color_scheme.U', F, { shouldDirty: true });
+        setValue('color_scheme.F', D, { shouldDirty: true });
+        setValue('color_scheme.D', B, { shouldDirty: true });
+        setValue('color_scheme.B', U, { shouldDirty: true });
         break;
       case 'y':
-        setValue('colorScheme.F', R, { shouldDirty: true });
-        setValue('colorScheme.R', B, { shouldDirty: true });
-        setValue('colorScheme.B', L, { shouldDirty: true });
-        setValue('colorScheme.L', F, { shouldDirty: true });
+        setValue('color_scheme.F', R, { shouldDirty: true });
+        setValue('color_scheme.R', B, { shouldDirty: true });
+        setValue('color_scheme.B', L, { shouldDirty: true });
+        setValue('color_scheme.L', F, { shouldDirty: true });
         break;
       case 'z':
-        setValue('colorScheme.U', L, { shouldDirty: true });
-        setValue('colorScheme.L', D, { shouldDirty: true });
-        setValue('colorScheme.D', R, { shouldDirty: true });
-        setValue('colorScheme.R', U, { shouldDirty: true });
+        setValue('color_scheme.U', L, { shouldDirty: true });
+        setValue('color_scheme.L', D, { shouldDirty: true });
+        setValue('color_scheme.D', R, { shouldDirty: true });
+        setValue('color_scheme.R', U, { shouldDirty: true });
         break;
     }
   };
 
   const currentColors = {
-    U: watch('colorScheme.U'),
-    D: watch('colorScheme.D'),
-    F: watch('colorScheme.F'),
-    B: watch('colorScheme.B'),
-    L: watch('colorScheme.L'),
-    R: watch('colorScheme.R'),
+    U: watch('color_scheme.U'),
+    D: watch('color_scheme.D'),
+    F: watch('color_scheme.F'),
+    B: watch('color_scheme.B'),
+    L: watch('color_scheme.L'),
+    R: watch('color_scheme.R'),
   };
 
   return (
@@ -109,7 +93,7 @@ export const ColorSchemeForm = ({
             (face) => (
               <Select
                 key={face}
-                name={`colorScheme.${face[0] as Face}`}
+                name={`color_scheme.${face[0] as Face}`}
                 label={face}
                 options={options}
                 register={register}
@@ -147,22 +131,17 @@ export const ColorSchemeForm = ({
           variant="secondary"
           onClick={() =>
             reset({
-              colorScheme: { ...settings.color_scheme },
+              color_scheme: { ...color_scheme },
               preferences: {
-                colorTableHeaders: settings.preferences.colorTableHeaders,
+                colorTableHeaders: preferences.colorTableHeaders,
               },
             })
           }
-          loading={mutation.isLoading}
           disabled={!formState.isDirty}
         >
           Cancel
         </Button>
-        <Button
-          type="submit"
-          loading={mutation.isLoading}
-          disabled={!formState.isDirty}
-        >
+        <Button type="submit" disabled={!formState.isDirty}>
           Save changes
         </Button>
       </div>

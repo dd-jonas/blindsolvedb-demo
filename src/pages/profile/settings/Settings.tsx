@@ -4,30 +4,30 @@ import {
   CubeIcon,
 } from '@heroicons/react/outline';
 
-import { Card } from '#components';
-import { useSettings } from '#providers';
-import { useUpdateSettings } from '#services/profile';
+import { Alert, Card } from '#components';
 
 import { ColorSchemeForm } from './ColorSchemeForm';
 import { LetteringSchemeForm } from './LetteringSchemeForm';
 import { PreferencesForm } from './PreferencesForm';
 
 export const Settings = () => {
-  const settings = useSettings();
-  const mutation = useUpdateSettings();
-
   return (
     <div className="settings">
+      <Alert warning>
+        All settings are stored in-memory. Refresh the page to reset everything
+        to default.
+      </Alert>
+
       <Card title="Color scheme" icon={<ColorSwatchIcon />} large>
-        <ColorSchemeForm settings={settings} mutation={mutation} />
+        <ColorSchemeForm />
       </Card>
 
       <Card title="Lettering scheme" icon={<CubeIcon />} large>
-        <LetteringSchemeForm settings={settings} mutation={mutation} />
+        <LetteringSchemeForm />
       </Card>
 
       <Card title="Preferences" icon={<AdjustmentsIcon />} large>
-        <PreferencesForm settings={settings} mutation={mutation} />
+        <PreferencesForm />
       </Card>
     </div>
   );

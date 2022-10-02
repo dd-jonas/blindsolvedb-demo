@@ -1,22 +1,33 @@
-import { createContext, ReactNode, useContext } from 'react';
+import { createContext, ReactNode, useContext, useState } from 'react';
 
-import { Alert, Spinner } from '#components';
-import { useSettings as useSettingsQuery } from '#services/profile';
+import { defaultSettings } from '#config/settings';
 import { Settings } from '#types/api';
 import { CubeLocation } from '#types/cube';
 
+type DeepPartial<T> = { [K in keyof T]?: DeepPartial<T[K]> };
 type LS = (target: string, buffers?: string) => string;
-const SettingsContext = createContext<(Settings & { ls: LS }) | null>(null);
+
+const SettingsContext = createContext<
+  | (Settings & {
+      ls: LS;
+      updateSettings: (data: DeepPartial<Settings>) => void;
+    })
+  | null
+>(null);
 
 export const SettingsProvider = ({ children }: { children: ReactNode }) => {
-  const query = useSettingsQuery({ enabled: true });
+  const [settings, setSettings] = useState(defaultSettings);
 
-  if (query.isLoading || query.isIdle) return <Spinner />;
-  if (query.isError) return <Alert danger>{query.error.message}</Alert>;
-
-  // If user is not authenticated, useSettings will use the placeholder data,
-  // which means it is not necessary to check if the query is enabled.
-  const settings = query.data;
+  const updateSettings = (data: DeepPartial<Settings>) => {
+    setSettings((prev) => ({
+      color_scheme: { ...prev.color_scheme, ...data.color_scheme },
+      lettering_scheme: {
+        ...prev.lettering_scheme,
+        ...data.lettering_scheme,
+      },
+      preferences: { ...prev.preferences, ...data.preferences },
+    }));
+  };
 
   /** Convert a target based on the lettering scheme */
   const ls = (target: string, buffers?: string) => {
@@ -38,7 +49,7 @@ export const SettingsProvider = ({ children }: { children: ReactNode }) => {
   };
 
   return (
-    <SettingsContext.Provider value={{ ...settings, ls }}>
+    <SettingsContext.Provider value={{ ...settings, updateSettings, ls }}>
       {children}
     </SettingsContext.Provider>
   );

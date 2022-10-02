@@ -1,43 +1,27 @@
 import { useForm, UseFormRegister } from 'react-hook-form';
-import { UseMutationResult } from 'react-query';
-import { toast } from 'react-toastify';
 
 import { Button, Checkbox, Input } from '#components';
-import { Body } from '#services/profile';
+import { useSettings } from '#providers';
 import { Settings } from '#types/api';
 
-type LetteringSchemeFormProps = {
-  settings: Settings;
-  mutation: UseMutationResult<null, Error, Body>;
-};
-
 type FormData = {
-  letteringScheme: Settings['lettering_scheme'];
+  lettering_scheme: Settings['lettering_scheme'];
   preferences: { useLetteringScheme: boolean };
 };
 
-export const LetteringSchemeForm = ({
-  settings,
-  mutation,
-}: LetteringSchemeFormProps) => {
+export const LetteringSchemeForm = () => {
+  const { lettering_scheme, preferences, updateSettings } = useSettings();
+
   const { register, handleSubmit, formState, reset } = useForm<FormData>({
     defaultValues: {
-      letteringScheme: { ...settings.lettering_scheme },
-      preferences: {
-        useLetteringScheme: settings.preferences.useLetteringScheme,
-      },
+      lettering_scheme: { ...lettering_scheme },
+      preferences: { useLetteringScheme: preferences.useLetteringScheme },
     },
   });
 
   const onSubmit = handleSubmit((data) => {
-    mutation.mutate(data, {
-      onSuccess: () => {
-        reset(data);
-      },
-      onError: () => {
-        toast.error('Failed to save lettering scheme');
-      },
-    });
+    updateSettings(data);
+    reset(data);
   });
 
   return (
@@ -66,7 +50,7 @@ export const LetteringSchemeForm = ({
                   register={register}
                   name={target}
                   errorMessage={
-                    formState.errors.letteringScheme?.[target]?.message
+                    formState.errors.lettering_scheme?.[target]?.message
                   }
                 />
               ))}
@@ -96,7 +80,7 @@ export const LetteringSchemeForm = ({
                   register={register}
                   name={target}
                   errorMessage={
-                    formState.errors.letteringScheme?.[target]?.message
+                    formState.errors.lettering_scheme?.[target]?.message
                   }
                 />
               ))}
@@ -116,22 +100,17 @@ export const LetteringSchemeForm = ({
           variant="secondary"
           onClick={() =>
             reset({
-              letteringScheme: { ...settings.lettering_scheme },
+              lettering_scheme: { ...lettering_scheme },
               preferences: {
-                useLetteringScheme: settings.preferences.useLetteringScheme,
+                useLetteringScheme: preferences.useLetteringScheme,
               },
             })
           }
-          loading={mutation.isLoading}
           disabled={!formState.isDirty}
         >
           Cancel
         </Button>
-        <Button
-          type="submit"
-          loading={mutation.isLoading}
-          disabled={!formState.isDirty}
-        >
+        <Button type="submit" disabled={!formState.isDirty}>
           Save changes
         </Button>
       </div>
@@ -153,7 +132,7 @@ const LetteringSchemeInput = ({
   return (
     <Input
       key={name}
-      name={`letteringScheme.${name}`}
+      name={`lettering_scheme.${name}`}
       label={name}
       register={register}
       required
