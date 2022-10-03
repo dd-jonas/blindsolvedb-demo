@@ -48,3 +48,18 @@
 .alert ~ .alert {
   margin-top: var(--size-3);
 }
+
+@media screen and (max-width: 1200px) {
+  .alert {
+    gap: var(--size-3);
+    padding: var(--size-3) var(--size-5);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .alert {
+    gap: var(--size-2);
+    padding: var(--size-2) var(--size-3);
+    font-size: var(--font-scale-0);
+  }
+}

@@ -68,20 +68,42 @@
   gap: var(--size-1);
 }
 
+.explorer__output {
+  overflow-x: hidden;
+}
+
 .explorer__output h5 {
   grid-area: output;
   margin-bottom: var(--size-3);
 }
 
 .explorer__output dl {
+  padding-bottom: var(--size-1);
   display: grid;
   grid-template-columns: auto 1fr;
   row-gap: var(--size-2);
   column-gap: var(--size-6);
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .explorer__output dl * {
   margin: 0;
+}
+
+.explorer__output dl {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-accent) var(--color-grey-200);
+}
+
+.explorer__output dl::-webkit-scrollbar {
+  height: var(--size-2);
+  background-color: var(--color-grey-200);
+}
+
+.explorer__output dl::-webkit-scrollbar-thumb {
+  background-color: var(--color-accent);
 }
 
 @media screen and (max-width: 1920px) {
@@ -102,5 +124,58 @@
   .explorer__cubes > :nth-child(2) {
     width: 9rem;
     height: 9rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .explorer__cubes {
+    gap: var(--size-3);
+  }
+
+  .explorer__cubes > :first-child {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .explorer__cubes > :nth-child(2) {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .explorer {
+    grid-template-areas:
+      'cubes'
+      'input'
+      'output';
+    grid-template-columns: 1fr;
+  }
+
+  .explorer__cubes {
+    gap: var(--size-1);
+  }
+
+  .explorer__cubes > :first-child {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .explorer__cubes > :nth-child(2) {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .explorer__turns {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'face slice'
+      'face rotation';
+  }
+
+  .explorer__turngroup:nth-of-type(2) {
+    display: none;
   }
 }
